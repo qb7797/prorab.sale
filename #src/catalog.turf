@@ -1,0 +1,761 @@
+<!-- @import kit/head.kit-->
+<title>Каталог</title>
+<!-- @import kit/header.kit-->
+
+<div class="app">
+    <!-- @import kit/submenu.kit -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 px-0 pb-4">
+                <button class="btn btn-main mr-3 active">Материалы</button>
+                <button class="btn btn-main mr-3">Ремонт и отделка</button>
+                <button class="btn btn-main mr-3">Строительство дома</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-0 pb-4">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Каталог</a></li>
+                    <li class="breadcrumb-item"><a href="#">Электроинструменты</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-4 pl-0">
+                <div class="catalog-list">
+                    <ul class="catalog-submenu pb-3 mb-3 border-bottom">
+                        <!-- <li class="catalog-submenu-item catalog-submenu-item--title">Автоматы, щитки,
+                            счетчики</li> -->
+                        <li class="catalog-submenu-item"><a href="#">Шуруповерты</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Перфораторы</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Штроборезы</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Клеевые пистолеты</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Электрические ножницы</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Электрические краскопульты</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Рубанки</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Фрезеры</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Отбойные молотки</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Скобы, гвозди и штифы</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Лобзики</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Строительные фены</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Установки для алмазного бурения</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Наборы электроинструмента</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Аккумуляторные отверки</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Мотобуры</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Гайковерты</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Дрели и строительные миксеры</a></li>
+                    </ul>
+                    <ul class="catalog-submenu mb-0">
+                        <li class="catalog-submenu-item catalog-submenu-item--title">Шлифовальные машины</li>
+                        <li class="catalog-submenu-item"><a href="#">Ленточные шлифмашины</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Плоскошлифовальные машины</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Дельташлифмашины</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Эксцентриковые машины</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Граверы</a></li>
+                    </ul>
+                    <ul id="contentId" class="collapse">
+                        <li class="catalog-submenu-item"><a href="#">Ленточные шлифмашины</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Плоскошлифовальные машины</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Дельташлифмашины</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Эксцентриковые машины</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Граверы</a></li>
+                    </ul>
+                    <ul class="pb-3 mb-3 border-bottom">
+                        <li class="catalog-submenu-item">
+                            <a class="showhideall collapsed color-text2" data-toggle="collapse" href="#contentId" aria-expanded="false" aria-controls="contentId"></a>
+                        </li>
+                    </ul>
+                    <ul class="catalog-submenu mb-0">
+                        <li class="catalog-submenu-item catalog-submenu-item--title" style="line-height: 24px;">Малярные установки и аксессуары</li>
+                        <li class="catalog-submenu-item"><a href="#">Аксесуары</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Малярные установки</a></li>
+                    </ul>
+                    <ul id="contentId2" class="collapse">
+                        <li class="catalog-submenu-item"><a href="#">Аксесуары</a></li>
+                        <li class="catalog-submenu-item"><a href="#">Малярные установки</a></li>
+                    </ul>
+                    <ul>
+                        <li class="catalog-submenu-item">
+                            <a class="showhideall collapsed color-text2" data-toggle="collapse" href="#contentId2" aria-expanded="false" aria-controls="contentId2"></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-8 pr-0">
+                <div class="card">
+                    <div class="card-header rounded-0 d-flex align-items-center justify-content-between">
+                        <h3 class="d-inline">
+                            Популярные товары
+                        </h3>
+                        <ul class="sort d-flex align-items-center">
+                            <li class="sort-item">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="order-type1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        По рейтингу
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="order-type1" tabindex="0">
+                                        <a class="dropdown-item" href="#">По рейтингу</a>
+                                        <a class="dropdown-item" href="#">По стоимости</a>
+                                        <a class="dropdown-item" href="#">По популяности</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sort-item">
+                                <a href="#" class="active">
+                                    <i class="ico-list"></i>
+                                </a>
+                            </li>
+                            <li class="sort-item">
+                                <a href="#">
+                                    <i class="ico-tile"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="product product--horizontally product--add-cart">
+                                    <div class="product-image">
+                                        <img src="img/product/drill.jpg" alt="product">
+                                    </div>
+                                    <div>
+                                        <h4>
+                                            <a href="#">Аккумуляторная дрель-шуруповерт Metabo PowerMaxx BS 2014 Basic
+                                                2.0Ah x2 Case 34</a>
+                                        </h4>
+                                        <ul class="product-data d-flex justify-content-between align-items-center">
+                                            <li class="product-data-item d-flex">
+                                                <span>
+                                                    <i class="ico-comment"></i> 42
+                                                </span>
+                                                <span>
+                                                    <i class="ico-star"></i> 4.8
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <span class="product-price">3 490 руб.</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="product product--horizontally product--add-cart">
+                                    <div class="product-image">
+                                        <img src="img/product/p.jpg" alt="product">
+                                    </div>
+                                    <div>
+                                        <h4>
+                                            <a href="#">Полировальная машина СПЕЦ БМП-1200</a>
+                                        </h4>
+                                        <ul class="product-data d-flex justify-content-between align-items-center">
+                                            <li class="product-data-item d-flex">
+                                                <span>
+                                                    <i class="ico-comment"></i> 42
+                                                </span>
+                                                <span>
+                                                    <i class="ico-star"></i> 4.8
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <span class="product-price">3 490 руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product product--horizontally product--add-cart">
+                                    <div class="product-image">
+                                        <img src="img/product/p.jpg" alt="product">
+                                    </div>
+                                    <div>
+                                        <h4>
+                                            <a href="#">Полировальная машина СПЕЦ БМП-1200</a>
+                                        </h4>
+                                        <ul class="product-data d-flex justify-content-between align-items-center">
+                                            <li class="product-data-item d-flex">
+                                                <span>
+                                                    <i class="ico-comment"></i> 42
+                                                </span>
+                                                <span>
+                                                    <i class="ico-star"></i> 4.8
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <span class="product-price">3 490 руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="more">
+                                    <div class="product product--horizontally product--add-cart">
+                                        <div class="product-image">
+                                            <img src="img/product/drill.jpg" alt="product">
+                                        </div>
+                                        <div>
+                                            <h4>
+                                                <a href="#">Аккумуляторная дрель-шуруповерт Metabo PowerMaxx BS 2014
+                                                    Basic 2.0Ah x2 Case 34</a>
+                                            </h4>
+                                            <ul class="product-data d-flex justify-content-between align-items-center">
+                                                <li class="product-data-item d-flex">
+                                                    <span>
+                                                        <i class="ico-comment"></i> 42
+                                                    </span>
+                                                    <span>
+                                                        <i class="ico-star"></i> 4.8
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div>
+                                                <span class="product-price">3 490 руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product product--horizontally product--add-cart">
+                                        <div class="product-image">
+                                            <img src="img/product/p.jpg" alt="product">
+                                        </div>
+                                        <div>
+                                            <h4>
+                                                <a href="#">Полировальная машина СПЕЦ БМП-1200</a>
+                                            </h4>
+                                            <ul class="product-data d-flex justify-content-between align-items-center">
+                                                <li class="product-data-item d-flex">
+                                                    <span>
+                                                        <i class="ico-comment"></i> 42
+                                                    </span>
+                                                    <span>
+                                                        <i class="ico-star"></i> 4.8
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div>
+                                                <span class="product-price">3 490 руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>
+                                        <a class="showhideall collapsed" data-toggle="collapse" href="#more"
+                                            aria-expanded="false" aria-controls="more"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header rounded-0 d-flex align-items-center justify-content-between">
+                        <h3 class="d-inline">
+                            Шуруповерты со скидкой
+                        </h3>
+                        <ul class="sort d-flex align-items-center">
+                            <li class="sort-item">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="order-type1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        По рейтингу
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="order-type1" tabindex="0">
+                                        <a class="dropdown-item" href="#">По рейтингу</a>
+                                        <a class="dropdown-item" href="#">По стоимости</a>
+                                        <a class="dropdown-item" href="#">По популяности</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sort-item">
+                                <a href="#" class="active">
+                                    <i class="ico-list"></i>
+                                </a>
+                            </li>
+                            <li class="sort-item">
+                                <a href="#">
+                                    <i class="ico-tile"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="product product--horizontally product--add-cart">
+                                    <div class="product-sale">-50%</div>
+                                    <div class="product-image">
+                                        <img src="img/product/drill.jpg" alt="product">
+                                    </div>
+                                    <div>
+                                        <h4>
+                                            <a href="#">Аккумуляторная дрель-шуруповерт PATRIOT BR 114Li 25</a>
+                                        </h4>
+                                        <ul class="product-data d-flex justify-content-between align-items-center">
+                                            <li class="product-data-item d-flex">
+                                                <span>
+                                                    <i class="ico-comment"></i> 42
+                                                </span>
+                                                <span>
+                                                    <i class="ico-star"></i> 4.8
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <span class="product-price">3 490 руб.</span>
+                                            <span class="product-price product-price--old">от 5 990
+                                                руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product product--horizontally product--add-cart">
+                                    <div class="product-sale">-25%</div>
+                                    <div class="product-image">
+                                        <img src="img/product/drill2.jpg" alt="product">
+                                    </div>
+                                    <div>
+                                        <h4>
+                                            <a href="#">Аккумуляторная дрель-шуруповерт PATRIOT BR 114Li 25</a>
+                                        </h4>
+                                        <ul class="product-data d-flex justify-content-between align-items-center">
+                                            <li class="product-data-item d-flex">
+                                                <span>
+                                                    <i class="ico-comment"></i> 55
+                                                </span>
+                                                <span>
+                                                    <i class="ico-star"></i> 4.8
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <span class="product-price">2 190 руб.</span>
+                                            <span class="product-price product-price--old">от 5 790
+                                                руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product product--horizontally product--add-cart">
+                                    <div class="product-sale">-45%</div>
+                                    <div class="product-image">
+                                        <img src="img/product/drill2.jpg" alt="product">
+                                    </div>
+                                    <div>
+                                        <h4>
+                                            <a href="#">Аккумуляторная дрель-шуруповерт PATRIOT BR 114Li 25</a>
+                                        </h4>
+                                        <ul class="product-data d-flex justify-content-between align-items-center">
+                                            <li class="product-data-item d-flex">
+                                                <span>
+                                                    <i class="ico-comment"></i> 15
+                                                </span>
+                                                <span>
+                                                    <i class="ico-star"></i> 4.9
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <span class="product-price">1 190 руб.</span>
+                                            <span class="product-price product-price--old">от 4 790
+                                                руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="more2">
+                                    <div class="product product--horizontally product--add-cart">
+                                        <div class="product-sale">-25%</div>
+                                        <div class="product-image">
+                                            <img src="img/product/drill2.jpg" alt="product">
+                                        </div>
+                                        <div>
+                                            <h4>
+                                                <a href="#">Аккумуляторная дрель-шуруповерт PATRIOT BR 114Li 25</a>
+                                            </h4>
+                                            <ul class="product-data d-flex justify-content-between align-items-center">
+                                                <li class="product-data-item d-flex">
+                                                    <span>
+                                                        <i class="ico-comment"></i> 55
+                                                    </span>
+                                                    <span>
+                                                        <i class="ico-star"></i> 4.8
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div>
+                                                <span class="product-price">2 190 руб.</span>
+                                                <span class="product-price product-price--old">от 5 790
+                                                    руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product product--horizontally product--add-cart">
+                                        <div class="product-sale">-45%</div>
+                                        <div class="product-image">
+                                            <img src="img/product/drill2.jpg" alt="product">
+                                        </div>
+                                        <div>
+                                            <h4>
+                                                <a href="#">Аккумуляторная дрель-шуруповерт PATRIOT BR 114Li 25</a>
+                                            </h4>
+                                            <ul class="product-data d-flex justify-content-between align-items-center">
+                                                <li class="product-data-item d-flex">
+                                                    <span>
+                                                        <i class="ico-comment"></i> 15
+                                                    </span>
+                                                    <span>
+                                                        <i class="ico-star"></i> 4.9
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div>
+                                                <span class="product-price">1 190 руб.</span>
+                                                <span class="product-price product-price--old">от 4 790
+                                                    руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>
+                                        <a class="showhideall collapsed" data-toggle="collapse" href="#more2"
+                                            aria-expanded="false" aria-controls="more2"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header rounded-0 d-flex align-items-center justify-content-between">
+                        <h3 class="d-inline">
+                            Шлифовальные машины со скидкой
+                        </h3>
+                        <ul class="sort d-flex align-items-center">
+                            <li class="sort-item">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="order-type1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        По рейтингу
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="order-type1" tabindex="0">
+                                        <a class="dropdown-item" href="#">По рейтингу</a>
+                                        <a class="dropdown-item" href="#">По стоимости</a>
+                                        <a class="dropdown-item" href="#">По популяности</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sort-item">
+                                <a href="#" class="active">
+                                    <i class="ico-list"></i>
+                                </a>
+                            </li>
+                            <li class="sort-item">
+                                <a href="#">
+                                    <i class="ico-tile"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="product product--horizontally product--add-cart">
+                                    <div class="product-sale">-50%</div>
+                                    <div class="product-image">
+                                        <img src="img/product/drill.jpg" alt="product">
+                                    </div>
+                                    <div>
+                                        <h4>
+                                            <a href="#">Аккумуляторная дрель-шуруповерт PATRIOT BR 114Li 25</a>
+                                        </h4>
+                                        <ul class="product-data d-flex justify-content-between align-items-center">
+                                            <li class="product-data-item d-flex">
+                                                <span>
+                                                    <i class="ico-comment"></i> 42
+                                                </span>
+                                                <span>
+                                                    <i class="ico-star"></i> 4.8
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <span class="product-price">3 490 руб.</span>
+                                            <span class="product-price product-price--old">от 5 990
+                                                руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product product--horizontally product--add-cart">
+                                    <div class="product-sale">-25%</div>
+                                    <div class="product-image">
+                                        <img src="img/product/drill2.jpg" alt="product">
+                                    </div>
+                                    <div>
+                                        <h4>
+                                            <a href="#">Аккумуляторная дрель-шуруповерт PATRIOT BR 114Li 25</a>
+                                        </h4>
+                                        <ul class="product-data d-flex justify-content-between align-items-center">
+                                            <li class="product-data-item d-flex">
+                                                <span>
+                                                    <i class="ico-comment"></i> 55
+                                                </span>
+                                                <span>
+                                                    <i class="ico-star"></i> 4.8
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <span class="product-price">2 190 руб.</span>
+                                            <span class="product-price product-price--old">от 5 790
+                                                руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product product--horizontally product--add-cart">
+                                    <div class="product-sale">-45%</div>
+                                    <div class="product-image">
+                                        <img src="img/product/drill2.jpg" alt="product">
+                                    </div>
+                                    <div>
+                                        <h4>
+                                            <a href="#">Аккумуляторная дрель-шуруповерт PATRIOT BR 114Li 25</a>
+                                        </h4>
+                                        <ul class="product-data d-flex justify-content-between align-items-center">
+                                            <li class="product-data-item d-flex">
+                                                <span>
+                                                    <i class="ico-comment"></i> 15
+                                                </span>
+                                                <span>
+                                                    <i class="ico-star"></i> 4.9
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <span class="product-price">1 190 руб.</span>
+                                            <span class="product-price product-price--old">от 4 790
+                                                руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="more3">
+                                    <div class="product product--horizontally product--add-cart">
+                                        <div class="product-sale">-25%</div>
+                                        <div class="product-image">
+                                            <img src="img/product/drill2.jpg" alt="product">
+                                        </div>
+                                        <div>
+                                            <h4>
+                                                <a href="#">Аккумуляторная дрель-шуруповерт PATRIOT BR 114Li 25</a>
+                                            </h4>
+                                            <ul class="product-data d-flex justify-content-between align-items-center">
+                                                <li class="product-data-item d-flex">
+                                                    <span>
+                                                        <i class="ico-comment"></i> 55
+                                                    </span>
+                                                    <span>
+                                                        <i class="ico-star"></i> 4.8
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div>
+                                                <span class="product-price">2 190 руб.</span>
+                                                <span class="product-price product-price--old">от 5 790
+                                                    руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product product--horizontally product--add-cart">
+                                        <div class="product-sale">-45%</div>
+                                        <div class="product-image">
+                                            <img src="img/product/drill2.jpg" alt="product">
+                                        </div>
+                                        <div>
+                                            <h4>
+                                                <a href="#">Аккумуляторная дрель-шуруповерт PATRIOT BR 114Li 25</a>
+                                            </h4>
+                                            <ul class="product-data d-flex justify-content-between align-items-center">
+                                                <li class="product-data-item d-flex">
+                                                    <span>
+                                                        <i class="ico-comment"></i> 15
+                                                    </span>
+                                                    <span>
+                                                        <i class="ico-star"></i> 4.9
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div>
+                                                <span class="product-price">1 190 руб.</span>
+                                                <span class="product-price product-price--old">от 4 790
+                                                    руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>
+                                        <a class="showhideall collapsed" data-toggle="collapse" href="#more3"
+                                            aria-expanded="false" aria-controls="more3"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-0">
+					<div class="card-header rounded-0 d-flex align-items-center justify-content-between">
+						<h3 class="d-inline">
+							Сварочные аппараты со скидкой
+						</h3>
+						<ul class="sort d-flex align-items-center">
+							<li class="sort-item">
+								<div class="dropdown">
+									<a class="dropdown-toggle" href="#" role="button" id="order-type2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										По дате добавления
+									</a>
+
+									<div class="dropdown-menu" aria-labelledby="order-type2" tabindex="0">
+										<a class="dropdown-item" href="#">По рейтингу</a>
+										<a class="dropdown-item" href="#">По стоимости</a>
+										<a class="dropdown-item" href="#">По популяности</a>
+									</div>
+								</div>
+							</li>
+							<li class="sort-item">
+								<a href="#">
+									<i class="ico-list"></i>
+								</a>
+							</li>
+							<li class="sort-item">
+								<a href="#" class="active">
+									<i class="ico-tile"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="card-body">
+						<div class="">
+							<div class="row mb-4">
+								<div class="col-6">
+									<div class="product square-short mx-0">
+                                        <div class="product-sale">-50%</div>
+										<div class="product-image">
+											<img src="img/product/item-small.jpg" alt="product">
+										</div>
+										<h4>
+											<a href="#">Сварочный аппарат РЕСАНТА САИ-160К
+												(MMA)</a>
+										</h4>
+										<ul class="product-data d-flex justify-content-between align-items-center">
+											<li class="product-data-item d-flex">
+												<span>
+													<i class="ico-comment"></i> 42
+												</span>
+												<span>
+													<i class="ico-star"></i> 4.8
+												</span>
+											</li>
+										</ul>
+										<div>
+											<span class="product-price">от 3 490 руб.</span>
+											<span class="product-price product-price--old">от 5 990 руб.</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="product square-short mx-0">
+                                        <div class="product-sale">-50%</div>
+										<div class="product-image">
+											<img src="img/product/item-small.jpg" alt="product">
+										</div>
+										<h4>
+											<a href="#">Сварочный аппарат РЕСАНТА САИ-160К
+												(MMA)</a>
+										</h4>
+										<ul class="product-data d-flex justify-content-between align-items-center">
+											<li class="product-data-item d-flex">
+												<span>
+													<i class="ico-comment"></i> 42
+												</span>
+												<span>
+													<i class="ico-star"></i> 4.8
+												</span>
+											</li>
+										</ul>
+										<div>
+											<span class="product-price">от 3 490 руб.</span>
+											<span class="product-price product-price--old">от 5 990 руб.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="collapse" id="more4" aria-expanded="true" style="">
+								<div class="row mb-4">
+									<div class="col-6">
+										<div class="product square-short mx-0">
+                                            <div class="product-sale">-50%</div>
+											<div class="product-image">
+												<img src="img/product/item-small.jpg" alt="product">
+											</div>
+											<h4>
+												<a href="#">Сварочный аппарат РЕСАНТА САИ-160К
+													(MMA)</a>
+											</h4>
+											<ul class="product-data d-flex justify-content-between align-items-center">
+												<li class="product-data-item d-flex">
+													<span>
+														<i class="ico-comment"></i> 42
+													</span>
+													<span>
+														<i class="ico-star"></i> 4.8
+													</span>
+												</li>
+											</ul>
+											<div>
+												<span class="product-price">от 3 490 руб.</span>
+												<span class="product-price product-price--old">от 5 990 руб.</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="product square-short mx-0">
+                                            <div class="product-sale">-50%</div>
+											<div class="product-image">
+												<img src="img/product/item-small.jpg" alt="product">
+											</div>
+											<h4>
+												<a href="#">Сварочный аппарат РЕСАНТА САИ-160К
+													(MMA)</a>
+											</h4>
+											<ul class="product-data d-flex justify-content-between align-items-center">
+												<li class="product-data-item d-flex">
+													<span>
+														<i class="ico-comment"></i> 42
+													</span>
+													<span>
+														<i class="ico-star"></i> 4.8
+													</span>
+												</li>
+											</ul>
+											<div>
+												<span class="product-price">от 3 490 руб.</span>
+												<span class="product-price product-price--old">от 5 990 руб.</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<p class="py-0 mb-0 ml-3">
+									<a class="showhideall collapsed" data-toggle="collapse" href="#more4" aria-expanded="true" aria-controls="more4"></a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- @import kit/footer.kit-->

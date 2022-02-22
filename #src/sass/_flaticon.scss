@@ -1,0 +1,240 @@
+/*
+    Flaticon icon font: Flaticon
+    Creation date: 12/12/2016 10:14
+    */
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Flaticon.woff") format("woff"),
+    url("../fonts/Flaticon.ttf") format("truetype"),
+    url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.fi:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.flaticon-apartment:before {
+  content: "\f100";
+}
+.flaticon-barrier:before {
+  content: "\f101";
+}
+.flaticon-battery:before {
+  content: "\f102";
+}
+.flaticon-blueprint:before {
+  content: "\f103";
+}
+.flaticon-blueprint-1:before {
+  content: "\f104";
+}
+.flaticon-bricks:before {
+  content: "\f105";
+}
+.flaticon-building:before {
+  content: "\f106";
+}
+.flaticon-compass:before {
+  content: "\f107";
+}
+.flaticon-concrete-mixer:before {
+  content: "\f108";
+}
+.flaticon-concrete-mixer-1:before {
+  content: "\f109";
+}
+.flaticon-cone:before {
+  content: "\f10a";
+}
+.flaticon-crane:before {
+  content: "\f10b";
+}
+.flaticon-crane-1:before {
+  content: "\f10c";
+}
+.flaticon-door:before {
+  content: "\f10d";
+}
+.flaticon-drill:before {
+  content: "\f10e";
+}
+.flaticon-drill-1:before {
+  content: "\f10f";
+}
+.flaticon-electricity:before {
+  content: "\f110";
+}
+.flaticon-elevator:before {
+  content: "\f111";
+}
+.flaticon-excavator:before {
+  content: "\f112";
+}
+.flaticon-floor:before {
+  content: "\f113";
+}
+.flaticon-hammer:before {
+  content: "\f114";
+}
+.flaticon-helmet:before {
+  content: "\f115";
+}
+.flaticon-house:before {
+  content: "\f116";
+}
+.flaticon-lodge:before {
+  content: "\f117";
+}
+.flaticon-paint-roller:before {
+  content: "\f118";
+}
+.flaticon-parquet:before {
+  content: "\f119";
+}
+.flaticon-pencil:before {
+  content: "\f11a";
+}
+.flaticon-pipes:before {
+  content: "\f11b";
+}
+.flaticon-plug:before {
+  content: "\f11c";
+}
+.flaticon-pole:before {
+  content: "\f11d";
+}
+.flaticon-ruler:before {
+  content: "\f11e";
+}
+.flaticon-screwdriver:before {
+  content: "\f11f";
+}
+.flaticon-shovel:before {
+  content: "\f120";
+}
+.flaticon-socket:before {
+  content: "\f121";
+}
+.flaticon-tap:before {
+  content: "\f122";
+}
+.flaticon-tap-1:before {
+  content: "\f123";
+}
+.flaticon-tile:before {
+  content: "\f124";
+}
+.flaticon-truck:before {
+  content: "\f125";
+}
+.flaticon-valve:before {
+  content: "\f126";
+}
+.flaticon-valve-1:before {
+  content: "\f127";
+}
+.flaticon-vest:before {
+  content: "\f128";
+}
+.flaticon-voltmeter:before {
+  content: "\f129";
+}
+.flaticon-wall:before {
+  content: "\f12a";
+}
+.flaticon-wallpaper:before {
+  content: "\f12b";
+}
+.flaticon-weight:before {
+  content: "\f12c";
+}
+.flaticon-wheelbarrow:before {
+  content: "\f12d";
+}
+.flaticon-worker:before {
+  content: "\f12e";
+}
+.flaticon-worker-1:before {
+  content: "\f12f";
+}
+.flaticon-wrecking-ball:before {
+  content: "\f130";
+}
+.flaticon-wrecking-ball-1:before {
+  content: "\f131";
+}
+
+$font-Flaticon-apartment: "\f100";
+$font-Flaticon-barrier: "\f101";
+$font-Flaticon-battery: "\f102";
+$font-Flaticon-blueprint: "\f103";
+$font-Flaticon-blueprint-1: "\f104";
+$font-Flaticon-bricks: "\f105";
+$font-Flaticon-building: "\f106";
+$font-Flaticon-compass: "\f107";
+$font-Flaticon-concrete-mixer: "\f108";
+$font-Flaticon-concrete-mixer-1: "\f109";
+$font-Flaticon-cone: "\f10a";
+$font-Flaticon-crane: "\f10b";
+$font-Flaticon-crane-1: "\f10c";
+$font-Flaticon-door: "\f10d";
+$font-Flaticon-drill: "\f10e";
+$font-Flaticon-drill-1: "\f10f";
+$font-Flaticon-electricity: "\f110";
+$font-Flaticon-elevator: "\f111";
+$font-Flaticon-excavator: "\f112";
+$font-Flaticon-floor: "\f113";
+$font-Flaticon-hammer: "\f114";
+$font-Flaticon-helmet: "\f115";
+$font-Flaticon-house: "\f116";
+$font-Flaticon-lodge: "\f117";
+$font-Flaticon-paint-roller: "\f118";
+$font-Flaticon-parquet: "\f119";
+$font-Flaticon-pencil: "\f11a";
+$font-Flaticon-pipes: "\f11b";
+$font-Flaticon-plug: "\f11c";
+$font-Flaticon-pole: "\f11d";
+$font-Flaticon-ruler: "\f11e";
+$font-Flaticon-screwdriver: "\f11f";
+$font-Flaticon-shovel: "\f120";
+$font-Flaticon-socket: "\f121";
+$font-Flaticon-tap: "\f122";
+$font-Flaticon-tap-1: "\f123";
+$font-Flaticon-tile: "\f124";
+$font-Flaticon-truck: "\f125";
+$font-Flaticon-valve: "\f126";
+$font-Flaticon-valve-1: "\f127";
+$font-Flaticon-vest: "\f128";
+$font-Flaticon-voltmeter: "\f129";
+$font-Flaticon-wall: "\f12a";
+$font-Flaticon-wallpaper: "\f12b";
+$font-Flaticon-weight: "\f12c";
+$font-Flaticon-wheelbarrow: "\f12d";
+$font-Flaticon-worker: "\f12e";
+$font-Flaticon-worker-1: "\f12f";
+$font-Flaticon-wrecking-ball: "\f130";
+$font-Flaticon-wrecking-ball-1: "\f131";

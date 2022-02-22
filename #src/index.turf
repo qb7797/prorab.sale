@@ -1,0 +1,30 @@
+<!-- @import kit/head.kit-->
+<title>Страницы проекта</title>
+<!-- @import kit/header.kit-->
+
+	<div class="app">
+		<!-- @import kit/submenu.kit -->
+		<div class="container">
+            <div class="col-6 mx-auto align-items-center">
+                <div class="card m-0">
+                    <div class="card-header rounded-0">
+                        <h1>Страницы проекта</h1>
+                    </div>
+                    <div class="card-body">
+                        <ol>
+                            <li class="mb-2"><a href="main.html"><h3 class="d-inline">Главная страница</h3></a> <small><i>(Страница готова)</i></small></li>
+                            <li class="mb-2"><a href="materials.html"><h3 class="d-inline">Материалы с результатом</h3></a> <small><i>(Страница готова)</i></small></li>
+                            <li class="mb-2"><a href="repair.html"><h3 class="d-inline">Ремонт и отделка</h3></a> <small><i>(Страница готова)</i></small></li>
+                            <li class="mb-2"><a href="profile.html"><h3 class="d-inline">Кабинет пользователя</h3></a> <small><i>(Страница готова)</i></small></li>
+                            <li class="mb-2"><a href="product-item.html"><h3 class="d-inline">Карточка товара</h3></a> <small><i>(Страница готова)</i></small></li>
+                            <li class="mb-2"><a href="catalog.html"><h3 class="d-inline">Каталог</h3></a> <small><i>(Страница готова)</i></small></li>
+                            <li class="mb-2"><a href="cart.html"><h3 class="d-inline">Корзина</h3></a> <small><i>(Страница готова)</i></small></li>
+                            <li class="mb-2"><a href="estimate.html"><h3 class="d-inline">Смета</h3></a> <small><i>(Страница готова)</i></small></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+
+<!-- @import kit/footer.kit-->

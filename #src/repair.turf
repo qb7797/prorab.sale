@@ -1,0 +1,841 @@
+<!-- @import kit/head.kit-->
+<title>Ремонт и отделка</title>
+<!-- @import kit/header.kit-->
+
+<div class="app">
+	<!-- @import kit/submenu.kit -->
+	<div class="container">
+		<div class="row">
+			<div class="col-12 px-0 pb-4">
+				<button class="btn btn-main mr-3">Материалы</button>
+				<button class="btn btn-main mr-3 active">Ремонт и отделка</button>
+				<button class="btn btn-main mr-3">Строительство дома</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 px-0 pb-4">
+				<h1 class="pb-4">Ремонт и отделка</h1>
+				<div class="card p-0">
+					<div class="estimate-type card-body d-flex justufy-content-between">
+						<div class="w-195">
+							<button class="btn btn-white d-block mx-auto" disabled>
+								<span>402 654 ₽</span> <br>
+								Итоговая смета</button>
+						</div>
+
+						<!-- Swiper -->
+						<div class="swiper-container slider-rooms w-100">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="w-100">
+										<button class="btn btn-white d-block mx-auto active">
+											<i class="own ico-living-room"></i>
+											Гостиная</button>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="w-100">
+										<button class="btn btn-white d-block mx-auto">
+											<i class="own ico-kitchen"></i>
+											Кухня</button>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="w-100">
+										<button class="btn btn-white d-block mx-auto">
+											<i class="own ico-bedroom"></i>
+											Спальня</button>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="w-100">
+										<button class="btn btn-white d-block mx-auto">
+											<i class="own ico-bathroom"></i>
+											Санузел</button>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="w-100">
+										<button class="btn btn-white d-block mx-auto">
+											<i class="own ico-hallway"></i>
+											Прихожая</button>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="w-100">
+										<button class="btn btn-white d-block mx-auto">
+											<i class="own ico-hallway"></i>
+											Прихожая</button> 
+									</div>
+								</div>
+							</div>
+							<!-- Add Arrows -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+
+						<div class="w-195">
+							<button class="btn btn-white d-block mx-auto">
+								<span class="rounded-50 bg-orange wh-32 d-flex align-items-center mx-auto mb-1">
+									<i class="own ico-plus ico-plus--small"></i>
+								</span>
+								Помещение
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12 px-0">
+				<div class="card">
+					<div class="card-header no-border pb-0 d-flex align-items-center justify-content-between">
+						<h3 class="d-inline">
+							Гостиная
+						</h3>
+						<ul class="sort d-flex align-items-center">
+							<li class="sort-item mr-0">
+								<a href="#" class="fz-15 d-flex align-items-center">
+									<i class="own ico-circular-arrow-line mr-2"></i> Сбросить
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="card-body no-border">
+						<div class="accordion">
+							<div class="card p-0 mb-3">
+								<div class="card-header no-border p-1" id="dimensionsHead">
+									<h4 class="mb-0">
+										<button class="btn btn-link btn-block text-left collapsed" type="button"
+											data-toggle="collapse" data-target="#dimensionsOne" aria-expanded="true"
+											aria-controls="dimensionsOne">
+											Габариты
+										</button>
+									</h4>
+								</div>
+
+								<div id="dimensionsOne" class="collapse mt-3" aria-labelledby="dimensionsHead"
+									data-parent="#dimensions">
+									<div class="card-body">
+										<div class="form-group row">
+											<label for="type7-21" class="col-12 col-sm-1 col-form-label">Форма</label>
+											<div class="col-12 col-sm-4">
+												<select id="type7-21" class="form-control">
+													<option selected>Квадрат</option>
+													<option>Прямоугольник</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-5">
+											<div class="row">
+												<div class="col-4 m-auto">
+													<img src="img/dimensions/cube.png" alt="">
+												</div>
+												<div class="col-8">
+													<div class="form-group row">
+														<label for="type5-1"
+															class="col-12 col-sm-6 col-form-label">Сторона А</label>
+														<div class="col-12 col-sm-6 pl-0">
+															<input type="number" class="form-control" id="type5-1">
+															<span class="length">мм</span>
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="type5-2"
+															class="col-12 col-sm-6 col-form-label">Сторона В</label>
+														<div class="col-12 col-sm-6 pl-0">
+															<input type="number" class="form-control" id="type5-2">
+															<span class="length">мм</span>
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="type5-13"
+															class="col-12 col-sm-6 col-form-label">Сторона С</label>
+														<div class="col-12 col-sm-6 pl-0">
+															<input type="number" class="form-control" id="type5-13">
+															<span class="length">мм</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card p-0 mb-3">
+								<div class="card-header no-border p-1" id="windowsHead">
+									<h4 class="mb-0">
+										<button class="btn btn-link btn-block text-left collapsed" type="button"
+											data-toggle="collapse" data-target="#windowsOne" aria-expanded="true"
+											aria-controls="windowsOne">
+											Вычесть окна
+										</button>
+									</h4>
+								</div>
+
+								<div id="windowsOne" class="collapse mt-3" aria-labelledby="windowsHead"
+									data-parent="#windows">
+									<div class="card-body">
+										<form class="form-inline d-flex justify-content-between pb-20 border-bottom">
+											<div class="d-flex">
+												<button class="btn btn-link btn-grey px-0">+ Добавить окно</button>
+											</div>
+										</form>
+										<form class="form-inline d-flex justify-content-between pb-20 border-bottom">
+											<div class="d-flex">
+												<div class="form-group col-4 pl-0">
+													<label for="type7-51"
+														class="col-12 col-sm-4 col-form-label d-block p-0">Форма</label>
+													<div class="col-12 col-sm-8 px-0">
+														<select id="type7-51" class="form-control w-100">
+															<option selected="">Квадрат</option>
+															<option>Прямоугольник</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-group col-4 pl-0">
+													<label for="type5-4"
+														class="col-12 col-sm-4 col-form-label d-block p-0">Длина</label>
+													<div class="col-12 col-sm-8 px-0">
+														<input type="number" class="form-control w-100" id="type5-4">
+														<span class="length">м</span>
+													</div>
+												</div>
+												<div class="form-group col-4 pl-0">
+													<label for="type5-5"
+														class="col-12 col-sm-4 col-form-label d-block p-0">Высота</label>
+													<div class="col-12 col-sm-8 px-0">
+														<input type="number" class="form-control w-100" id="type5-5">
+														<span class="length">мм</span>
+													</div>
+												</div>
+											</div>
+											<button type="button" class="close" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</form>
+										<form class="form-inline d-flex justify-content-between pb-20 border-bottom">
+											<div class="d-flex">
+												<div class="form-group col-4 pl-0">
+													<label for="type7-2"
+														class="col-12 col-sm-4 col-form-label d-block p-0">Форма</label>
+													<div class="col-12 col-sm-8 px-0">
+														<select id="type7-2" class="form-control w-100">
+															<option selected="">Квадрат</option>
+															<option>Прямоугольник</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-group col-4 pl-0">
+													<label for="type5-6"
+														class="col-12 col-sm-4 col-form-label d-block p-0">Длина</label>
+													<div class="col-12 col-sm-8 px-0">
+														<input type="number" class="form-control w-100" id="type5-6">
+														<span class="length">м</span>
+													</div>
+												</div>
+												<div class="form-group col-4 pl-0">
+													<label for="type5-7"
+														class="col-12 col-sm-4 col-form-label d-block p-0">Высота</label>
+													<div class="col-12 col-sm-8 px-0">
+														<input type="number" class="form-control w-100" id="type5-7">
+														<span class="length">мм</span>
+													</div>
+												</div>
+											</div>
+											<button type="button" class="close" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="card p-0 mb-3">
+								<div class="card-header no-border p-1" id="doorsHead">
+									<h4 class="mb-0">
+										<button class="btn btn-link btn-block text-left collapsed" type="button"
+											data-toggle="collapse" data-target="#doorsOne" aria-expanded="true"
+											aria-controls="doorsOne">
+											Вычесть окна
+										</button>
+									</h4>
+								</div>
+
+								<div id="doorsOne" class="collapse mt-3" aria-labelledby="doorsHead"
+									data-parent="#doors">
+									<div class="card-body">
+										<form class="form-inline d-flex justify-content-between pb-20 border-bottom">
+											<div class="d-flex">
+												<button class="btn btn-link btn-grey px-0">+ Добавить дверь</button>
+											</div>
+										</form>
+										<form class="form-inline d-flex justify-content-between pb-20 border-bottom">
+											<div class="d-flex">
+												<div class="form-group col-4 pl-0">
+													<label for="type7-3"
+														class="col-12 col-sm-4 col-form-label d-block p-0">Форма</label>
+													<div class="col-12 col-sm-8 px-0">
+														<select id="type7-3" class="form-control w-100">
+															<option selected="">Квадрат</option>
+															<option>Прямоугольник</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-group col-4 pl-0">
+													<label for="type5-9"
+														class="col-12 col-sm-4 col-form-label d-block p-0">Длина</label>
+													<div class="col-12 col-sm-8 px-0">
+														<input type="number" class="form-control w-100" id="type5-8">
+														<span class="length">м</span>
+													</div>
+												</div>
+												<div class="form-group col-4 pl-0">
+													<label for="type5-10"
+														class="col-12 col-sm-4 col-form-label d-block p-0">Высота</label>
+													<div class="col-12 col-sm-8 px-0">
+														<input type="number" class="form-control w-100" id="type5-9">
+														<span class="length">мм</span>
+													</div>
+												</div>
+											</div>
+											<button type="button" class="close" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</form>
+										<form class="form-inline d-flex justify-content-between pb-20 border-bottom">
+											<div class="d-flex">
+												<div class="form-group col-4 pl-0">
+													<label for="type7"
+														class="col-12 col-sm-4 col-form-label d-block p-0">Форма</label>
+													<div class="col-12 col-sm-8 px-0">
+														<select id="type7" class="form-control w-100">
+															<option selected="">Квадрат</option>
+															<option>Прямоугольник</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-group col-4 pl-0">
+													<label for="type5-10"
+														class="col-12 col-sm-4 col-form-label d-block p-0">Длина</label>
+													<div class="col-12 col-sm-8 px-0">
+														<input type="number" class="form-control w-100" id="type5-10">
+														<span class="length">м</span>
+													</div>
+												</div>
+												<div class="form-group col-4 pl-0">
+													<label for="type5-11"
+														class="col-12 col-sm-4 col-form-label d-block p-0">Высота</label>
+													<div class="col-12 col-sm-8 px-0">
+														<input type="number" class="form-control w-100" id="type5-11">
+														<span class="length">мм</span>
+													</div>
+												</div>
+											</div>
+											<button type="button" class="close" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="card p-0 mb-3">
+								<div class="card-header no-border p-1" id="finishingworkHead">
+									<h4 class="mb-0">
+										<button class="btn btn-link btn-block text-left collapsed" type="button"
+											data-toggle="collapse" data-target="#finishingworkOne" aria-expanded="true"
+											aria-controls="finishingworkOne">
+											Отделочные работы
+										</button>
+									</h4>
+								</div>
+
+								<div id="finishingworkOne" class="collapse mt-3" aria-labelledby="finishingworkHead"
+									data-parent="#finishingwork">
+									<div class="card-body">
+										<ul class="nav nav-tabs" id="myTab" role="tablist">
+											<li class="nav-item" role="presentation">
+												<a class="nav-link px-0 active" id="ceiling-tab" data-toggle="tab"
+													href="#ceiling" role="tab" aria-controls="ceiling"
+													aria-selected="true">
+													Потолки
+													<span class="badge badge-pill badge-light">23</span>
+													</a>
+												</li>
+												<li class=" nav-item" role="presentation">
+														<a class="nav-link px-0" id="wall-tab" data-toggle="tab"
+															href="#wall" role="tab" aria-controls="wall"
+															aria-selected="false">
+															Стены
+															<span class="badge badge-pill badge-light">23</span>
+													</a>
+												</li>
+												<li class=" nav-item" role="presentation">
+																<a class="nav-link px-0" id="floor-tab"
+																	data-toggle="tab" href="#floor" role="tab"
+																	aria-controls="floor" aria-selected="false">
+																	Полы
+																	<span class="badge badge-pill badge-light">23</span>
+													</a>
+												</li>
+											  </ul>
+											  <div class=" tab-content" id="myTabContent">
+																		<div class="tab-pane fade show active"
+																			id="ceiling" role="tabpanel"
+																			aria-labelledby="ceiling-tab">
+																			<div class="d-flex border-bottom py-3">
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">А</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Б</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">В</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Г</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Д</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Е</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Ж</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">З</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">И</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">К</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Л</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">М</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Н</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">О</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">П</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Р</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">С</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Т</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a active">У</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Ф</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Х</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Ч</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Ш</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Щ</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Э</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Ю</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Я</button>
+																			</div>
+																			<ul class="filter py-3">
+																				<li class="filter-item">
+																					<div
+																						class="filter-item-check d-flex justify-content-between">
+																						<div
+																							class="custom-control custom-checkbox">
+																							<input type="checkbox"
+																								class="custom-control-input"
+																								id="customCheck1">
+																							<label
+																								class="custom-control-label"
+																								for="customCheck1">Устройство
+																								теплоизоляции пола из
+																								минеральных плит или
+																								пенополистирола (ППС)
+																								толщиной 1-2 см</label>
+																						</div>
+																					</div>
+																				</li>
+																				<li class="filter-item">
+																					<div
+																						class="filter-item-check d-flex justify-content-between">
+																						<div
+																							class="custom-control custom-checkbox">
+																							<input type="checkbox"
+																								class="custom-control-input"
+																								id="customCheck2-88">
+																							<label
+																								class="custom-control-label"
+																								for="customCheck2-88">Устройство
+																								гидроизоляции пола из
+																								двух слоев</label>
+																						</div>
+																					</div>
+																				</li>
+																				<li class="filter-item">
+																					<div
+																						class="filter-item-check d-flex justify-content-between">
+																						<div
+																							class="custom-control custom-checkbox">
+																							<input type="checkbox"
+																								class="custom-control-input"
+																								id="customCheck3-88">
+																							<label
+																								class="custom-control-label"
+																								for="customCheck3-88">Устройство
+																								электрического теплого
+																								пола</label>
+																						</div>
+																					</div>
+																				</li>
+																			</ul>
+																		</div>
+																		<div class="tab-pane fade" id="wall"
+																			role="tabpanel" aria-labelledby="wall-tab">
+																			<div class="d-flex border-bottom py-3">
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">А</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Б</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">В</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Г</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Д</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Е</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Ж</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">З</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">И</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">К</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Л</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">М</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Н</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">О</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a active">П</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Р</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">С</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Т</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">У</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Ф</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Х</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Ч</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Ш</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Щ</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Э</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Ю</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Я</button>
+																			</div>
+																			<ul class="filter py-3">
+																				<li class="filter-item">
+																					<div
+																						class="filter-item-check d-flex justify-content-between">
+																						<div
+																							class="custom-control custom-checkbox">
+																							<input type="checkbox"
+																								class="custom-control-input"
+																								id="customCheck1-31">
+																							<label
+																								class="custom-control-label"
+																								for="customCheck1-31">Устройство
+																								теплоизоляции пола из
+																								минеральных плит или
+																								пенополистирола (ППС)
+																								толщиной 1-2 см</label>
+																						</div>
+																					</div>
+																				</li>
+																				<li class="filter-item">
+																					<div
+																						class="filter-item-check d-flex justify-content-between">
+																						<div
+																							class="custom-control custom-checkbox">
+																							<input type="checkbox"
+																								class="custom-control-input"
+																								id="customCheck2-42">
+																							<label
+																								class="custom-control-label"
+																								for="customCheck2-42">Устройство
+																								гидроизоляции пола из
+																								двух слоев</label>
+																						</div>
+																					</div>
+																				</li>
+																				<li class="filter-item">
+																					<div
+																						class="filter-item-check d-flex justify-content-between">
+																						<div
+																							class="custom-control custom-checkbox">
+																							<input type="checkbox"
+																								class="custom-control-input"
+																								id="customCheck3-1">
+																							<label
+																								class="custom-control-label"
+																								for="customCheck3-1">Устройство
+																								электрического теплого
+																								пола</label>
+																						</div>
+																					</div>
+																				</li>
+																			</ul>
+																		</div>
+																		<div class="tab-pane fade" id="floor"
+																			role="tabpanel" aria-labelledby="floor-tab">
+																			<div class="d-flex border-bottom py-3">
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">А</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Б</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">В</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Г</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Д</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Е</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Ж</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">З</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">И</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">К</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Л</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">М</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Н</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">О</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">П</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Р</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">С</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Т</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">У</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Ф</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Х</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Ч</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Ш</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Щ</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a active">Э</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Ю</button>
+																				<button
+																					class="btn btn-white btn-oneletter p-0 lh-a">Я</button>
+																			</div>
+																			<ul class="filter py-3">
+																				<li class="filter-item">
+																					<div
+																						class="filter-item-check d-flex justify-content-between">
+																						<div
+																							class="custom-control custom-checkbox">
+																							<input type="checkbox"
+																								class="custom-control-input"
+																								id="customCheck1-99">
+																							<label
+																								class="custom-control-label"
+																								for="customCheck1-99">Устройство
+																								теплоизоляции пола из
+																								минеральных плит или
+																								пенополистирола (ППС)
+																								толщиной 1-2 см</label>
+																						</div>
+																					</div>
+																				</li>
+																				<li class="filter-item">
+																					<div
+																						class="filter-item-check d-flex justify-content-between">
+																						<div
+																							class="custom-control custom-checkbox">
+																							<input type="checkbox"
+																								class="custom-control-input"
+																								id="customCheck2">
+																							<label
+																								class="custom-control-label"
+																								for="customCheck2">Устройство
+																								гидроизоляции пола из
+																								двух слоев</label>
+																						</div>
+																					</div>
+																				</li>
+																				<li class="filter-item">
+																					<div
+																						class="filter-item-check d-flex justify-content-between">
+																						<div
+																							class="custom-control custom-checkbox">
+																							<input type="checkbox"
+																								class="custom-control-input"
+																								id="customCheck3">
+																							<label
+																								class="custom-control-label"
+																								for="customCheck3">Устройство
+																								электрического теплого
+																								пола</label>
+																						</div>
+																					</div>
+																				</li>
+																			</ul>
+																		</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card p-0 mb-3">
+							<div class="card-header no-border p-1" id="finishingMaterialsHead">
+								<h4 class="mb-0">
+									<button class="btn btn-link btn-block text-left collapsed" type="button"
+										data-toggle="collapse" data-target="#finishingMaterialsOne" aria-expanded="true"
+										aria-controls="finishingMaterialsOne">
+										Материалы для работы работы
+									</button>
+								</h4>
+							</div>
+							<div id="finishingMaterialsOne" class="collapse mt-3"
+								aria-labelledby="finishingMaterialsHead" data-parent="#finishingMaterials">
+								<div class="card-body">
+									<div class="d-flex border-bottom py-3">
+										<button class="btn btn-white btn-oneletter p-0 lh-a">А</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">Б</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">В</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">Г</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">Д</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">Е</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">Ж</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">З</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">И</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">К</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">Л</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">М</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">Н</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">О</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">П</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">Р</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">С</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">Т</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">У</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">Ф</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">Х</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">Ч</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">Ш</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">Щ</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a active">Э</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">Ю</button>
+										<button class="btn btn-white btn-oneletter p-0 lh-a">Я</button>
+									</div>
+									<ul class="filter py-3">
+										<li class="filter-item">
+											<div class="filter-item-check d-flex justify-content-between">
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input"
+														id="customCheck19-1">
+													<label class="custom-control-label" for="customCheck19-1">Устройство
+														теплоизоляции пола из минеральных плит или пенополистирола (ППС)
+														толщиной 1-2 см</label>
+												</div>
+											</div>
+										</li>
+										<li class="filter-item">
+											<div class="filter-item-check d-flex justify-content-between">
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input"
+														id="customCheck2-62">
+													<label class="custom-control-label" for="customCheck2-62">Устройство
+														гидроизоляции пола из двух слоев</label>
+												</div>
+											</div>
+										</li>
+										<li class="filter-item">
+											<div class="filter-item-check d-flex justify-content-between">
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input"
+														id="customCheck3-3">
+													<label class="custom-control-label" for="customCheck3-3">Устройство
+														электрического теплого пола</label>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-footer pt-3 d-flex align-items-center">
+					<div class="row w-100">
+						<div class="col-3 align-items-center">
+							<p class="mb-2">Площадь полов: <span><b>108 м<sup>2</sup></b></span></p>
+							<p class="mb-2">Площадь потолков: <span><b>108 м<sup>2</sup></b></span></p>
+							<p class="mb-2">Площадь стен: <span><b>425 м<sup>2</sup></b></span></p>
+						</div>
+						<div class="col-9 d-flex justify-content-between align-items-center">
+							<div class="goods-filter d-flex">
+								<div class="filter-item-check d-flex justify-content-between mb-0 mx-3">
+									<div class="custom-control custom-checkbox d-flex align-items-center">
+										<input type="checkbox" class="custom-control-input" id="customCheck11-1">
+										<label class="custom-control-label" for="customCheck11-1">Материалы в
+											наличии</label>
+									</div>
+								</div>
+								<div class="filter-item-check d-flex justify-content-between mb-0 mx-3">
+									<div class="custom-control custom-checkbox d-flex align-items-center">
+										<input type="checkbox" class="custom-control-input" id="customCheck11-2">
+										<label class="custom-control-label" for="customCheck11-2">Минимальная
+											цена</label>
+									</div>
+								</div>
+								<div class="filter-item-check d-flex justify-content-between mb-0 mx-3">
+									<div class="custom-control custom-checkbox d-flex align-items-center">
+										<input type="checkbox" class="custom-control-input" id="customCheck11-3">
+										<label class="custom-control-label" for="customCheck11-3">Цена/Качество</label>
+									</div>
+								</div>
+							</div>
+							<button class="btn btn-orange">Найти товары</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<!-- @import kit/footer.kit-->

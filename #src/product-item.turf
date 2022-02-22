@@ -1,0 +1,553 @@
+<!-- @import kit/head.kit-->
+<title>Карточка товара</title>
+<!-- @import kit/header.kit-->
+
+<div class="app">
+    <!-- @import kit/submenu.kit -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 px-0 pb-4">
+                <button class="btn btn-main mr-3 active">Материалы</button>
+                <button class="btn btn-main mr-3">Ремонт и отделка</button>
+                <button class="btn btn-main mr-3">Строительство дома</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-0 pb-4">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Инструменты</a></li>
+                    <li class="breadcrumb-item"><a href="#">Дрели и шуруповерты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-0 pb-4">
+                <div class="card">
+                    <div class="card-header rounded-0 d-flex align-items-center justify-content-between">
+                        <h4 class="d-inline color-black">
+                            Аккумуляторная дрель-шуруповерт PATRIOT BR 114Li 25
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-7 pl-0">
+                                    <div class="d-flex py-4">
+                                        <div class="swiper-container gallery-thumbs" style="padding: 30px 0;">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="img/product/drill1-big.jpg" alt="">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="img/product/drill2-big.jpg" alt="">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="img/product/drill3-big.jpg" alt="">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="img/product/drill4-big.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- Add Arrows -->
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                        </div>
+                                        <div class="swiper-container gallery-top">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="img/product/drill1-big.jpg" alt="">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="img/product/drill2-big.jpg" alt="">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="img/product/drill3-big.jpg" alt="">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="img/product/drill4-big.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 pr-0">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <span class="fz-30 fw-500 color-black">3 490 ₽</span>
+                                        <span class="stock stock--in">В наличии</span>
+                                        <!-- <span class="stock stock--out">Нет в наличии</span> -->
+                                        <span class="d-flex align-items-center">
+                                            <i class="own ico-star mr-2"></i> 4.8
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <div class="product-count">
+                                            <button id="minus" class="btn minus">-</button>
+                                            <input type="number" class="form-control text-center" id="count" value="1" autocomplete="off">
+                                            <button id="plus" class="btn plus">+</button>
+                                        </div>
+                                        <button class="btn btn-orange px-4">Купить</button>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <a href="#">
+                                                <i class="ico-wish mr-3"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="ico-stat m-0"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <button class="btn btn-light fw-500" style="width: 242px;">Купить в один
+                                            клик</button>
+                                    </div>
+                                    <div class="mb-4">
+                                        <img src="img/seller/citylink.jpg" alt="">
+                                    </div>
+                                    <div class="form-group" style="width: 242px;">
+                                        <label class="d-block mb-3 fw-500">Цвет</label>
+                                        <div class="color">
+                                            <div class="color-item color-item--orange selected" data-value="orange">
+                                            </div>
+                                            <div class="color-item color-item--yellow" data-value="yellow"></div>
+                                            <div class="color-item color-item--grey" data-value="black"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="width: 242px;">
+                                        <label for="size" class="d-block mb-3 fw-500">Размеры</label>
+                                        <select class="form-control" id="size">
+                                            <option>800 х 2000 х 400 мм</option>
+                                            <option>700 х 2000 х 400 мм</option>
+                                            <option>600 х 2000 х 400 мм</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 px-0">
+                                    <ul class="nav nav-tabs product-tabs mb-4" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link px-0 active" id="characteristics-tab" data-toggle="tab" href="#characteristics"
+                                                role="tab" aria-controls="characteristics" aria-selected="false">
+                                                Характеристики
+                                            </a>
+                                        </li>
+                                        <li class=" nav-item" role="presentation">
+                                            <a class="nav-link px-0" id="feedback-tab" data-toggle="tab" href="#feedback"
+                                                role="tab" aria-controls="feedback" aria-selected="false">
+                                                Отзывы
+                                                <span class="badge badge-pill badge-orange color-white">23</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent" style="">
+                                        <div class="tab-pane fade  active show" id="characteristics" role="tabpanel" aria-labelledby="characteristics-tab">
+                                            <table class="table-characteristics">
+                                                <tr>
+                                                    <td class="type">
+                                                        <span>Тип</span>  
+                                                    </td>
+                                                    <td class="data">Дрель-шуруповерт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="type">
+                                                        <span>Режим работы</span>
+                                                    </td>
+                                                    <td class="data">Завинчивание, сверление</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="type">
+                                                        <span>Тип патрона</span>
+                                                    </td>
+                                                    <td class="data">Быстрозажимной</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="type">
+                                                        <span>Вид питания</span>
+                                                    </td>
+                                                    <td class="data">Сменный аккумулятор</td>
+                                                </tr>
+                                            </table>
+                                            <div class="collapse" id="contentId">
+                                                <table class="table-characteristics">
+                                                    <tr>
+                                                        <td class="type">
+                                                            <span>Тип</span>  
+                                                        </td>
+                                                        <td class="data">Дрель-шуруповерт</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="type">
+                                                            <span>Режим работы</span>
+                                                        </td>
+                                                        <td class="data">Завинчивание, сверление</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="type">
+                                                            <span>Тип патрона</span>
+                                                        </td>
+                                                        <td class="data">Быстрозажимной</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <a class="showhideall collapsed" data-toggle="collapse" href="#contentId" aria-expanded="false" aria-controls="contentId"></a>
+                                        </div>
+                                        <div class="tab-pane fade" id="feedback" role="tabpanel" aria-labelledby="feedback-tab">
+                                            <div class="review">
+                                                <div class="review-item mb-4">
+                                                    <div class="review-header d-flex align-items-center mb-3">
+                                                        <div class="review-title-rating d-flex align-items-center">
+                                                            <div class="review-title">Николай</div>
+                                                            <div class="review-rading ml-4">
+                                                                <i class="own ico-star ico--orange"></i>
+                                                                <i class="own ico-star ico--orange"></i>
+                                                                <i class="own ico-star ico--orange"></i>
+                                                                <i class="own ico-star"></i>
+                                                                <i class="own ico-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="review-date ml-4">20 марта 2021 г.</div>
+                                                    </div>
+                                                    <div class="review-body">
+                                                        <p>Отличный шуруповёрт для дома, сегодня забрал с пункта выдачи. Работаю
+                                                            им 2 часа, пока нареканий никаких, посмотрим что будет дальше.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="review-item mb-4">
+                                                    <div class="review-header d-flex align-items-center mb-3">
+                                                        <div class="review-title-rating d-flex align-items-center">
+                                                            <div class="review-title">Николай</div>
+                                                            <div class="review-rading ml-4">
+                                                                <i class="own ico-star ico--orange"></i>
+                                                                <i class="own ico-star ico--orange"></i>
+                                                                <i class="own ico-star ico--orange"></i>
+                                                                <i class="own ico-star"></i>
+                                                                <i class="own ico-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="review-date ml-4">20 марта 2021 г.</div>
+                                                    </div>
+                                                    <div class="review-body">
+                                                        <p>Отличный шуруповёрт для дома, сегодня забрал с пункта выдачи. Работаю
+                                                            им 2 часа, пока нареканий никаких, посмотрим что будет дальше.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="showMoreReviewsProductItem">
+                                                <div class="row mb-4">
+                                                    <div class="col-12">
+                                                        <div class="review-item mb-4">
+                                                            <div class="review-header d-flex align-items-center mb-3">
+                                                                <div class="review-title-rating d-flex align-items-center">
+                                                                    <div class="review-title">Николай</div>
+                                                                    <div class="review-rading ml-4">
+                                                                        <i class="own ico-star ico--orange"></i>
+                                                                        <i class="own ico-star ico--orange"></i>
+                                                                        <i class="own ico-star ico--orange"></i>
+                                                                        <i class="own ico-star"></i>
+                                                                        <i class="own ico-star"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="review-date ml-4">20 марта 2021 г.</div>
+                                                            </div>
+                                                            <div class="review-body">
+                                                                <p>Отличный шуруповёрт для дома, сегодня забрал с пункта выдачи. Работаю
+                                                                    им 2 часа, пока нареканий никаких, посмотрим что будет дальше.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="review-item">
+                                                            <div class="review-header d-flex align-items-center mb-3">
+                                                                <div class="review-title-rating d-flex align-items-center">
+                                                                    <div class="review-title">Николай</div>
+                                                                    <div class="review-rading ml-4">
+                                                                        <i class="own ico-star ico--orange"></i>
+                                                                        <i class="own ico-star ico--orange"></i>
+                                                                        <i class="own ico-star ico--orange"></i>
+                                                                        <i class="own ico-star"></i>
+                                                                        <i class="own ico-star"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="review-date ml-4">20 марта 2021 г.</div>
+                                                            </div>
+                                                            <div class="review-body">
+                                                                <p>Отличный шуруповёрт для дома, сегодня забрал с пункта выдачи. Работаю
+                                                                    им 2 часа, пока нареканий никаких, посмотрим что будет дальше.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="showhideall collapsed" data-toggle="collapse" href="#showMoreReviewsProductItem" aria-expanded="false" aria-controls="showMoreReviewsProductItem"></a>
+                                            <div class="col-7 pl-0">
+                                                <form class="row pt-4 mb-0">
+                                                    <div class="col-6">
+                                                        <div class="form-group row">
+                                                            <label for="name" class="col-4 col-form-label">Имя</label>
+                                                            <div class="col-8">
+                                                                <input type="text" class="form-control" id="name">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-group row">
+                                                            <label for="email" class="col-4 col-form-label">E-mail</label>
+                                                            <div class="col-8">
+                                                                <input type="email" class="form-control" id="email">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-group row align-items-center">
+                                                            <label class="col-4 col-form-label">Оценка</label>
+                                                            <div class="col-8">
+                                                                <div class="stars">
+                                                                    <input class="star star-5" id="star-5" type="radio" name="star" />
+                                                                    <label class="star star-5" for="star-5"></label>
+                                                    
+                                                                    <input class="star star-4" id="star-4" type="radio" name="star" />
+                                                                    <label class="star star-4" for="star-4"></label>
+                                                    
+                                                                    <input class="star star-3" id="star-3" type="radio" name="star" />
+                                                                    <label class="star star-3" for="star-3"></label>
+                                                    
+                                                                    <input class="star star-2" id="star-2" type="radio" name="star" />
+                                                                    <label class="star star-2" for="star-2"></label>
+                                                    
+                                                                    <input class="star star-1" id="star-1" type="radio" name="star" />
+                                                                    <label class="star star-1" for="star-1"></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group row">
+                                                            <div class="col-12">
+                                                                <textarea class="form-control" rows="7"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group row mb-0">
+                                                            <div class="col-12">
+                                                                <button class="btn btn-light fw-500">Отправить</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-0 pb-4">
+                <div class="card">
+                    <div class="card-header rounded-0 d-flex align-items-center justify-content-between">
+                        <h4 class="d-inline">
+                            Изменение стоимости
+                        </h4>
+                        <ul class="sort d-flex align-items-center mr-0">
+                            <li class="sort-item m-0">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="order-type3"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        За полгода
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="order-type3" tabindex="0">
+                                        <a class="dropdown-item" href="#">За год</a>
+                                        <a class="dropdown-item" href="#">За месяц</a>
+                                        <a class="dropdown-item" href="#">За неделю</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-8 pl-0">
+                                    <div style="margin-left: -10px;">
+                                        <canvas id="priceDynamics"></canvas>
+                                    </div>
+                                </div>
+                                <div class="col-4 pr-0">
+                                    <div class="alert alert-success mb-0">
+                                        <div class="">
+                                            <p class="text-center color-black fz-18 mb-3"><b>Средняя цена</b></p>
+                                            <p class="text-center color-black fz-30 fw-500 mb-2">2 990 ₽</p>
+                                            <p class="text-center mb-3">2 990 - 3 850 руб.</p>
+                                            <button class="btn btn-success d-block mx-auto">Следить за ценой</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-0 pb-4">
+                <div class="card mb-0">
+                    <div class="card-header rounded-0 d-flex align-items-center justify-content-between">
+                        <h4 class="d-inline">
+                            Похожие товары
+                        </h4>
+                        <ul class="sort d-flex align-items-center">
+                            <li class="sort-item">
+                                <a href="#" class="active">
+                                    <i class="ico-list"></i>
+                                </a>
+                            </li>
+                            <li class="sort-item">
+                                <a href="#">
+                                    <i class="ico-tile"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="product product--horizontally product--add-cart">
+                                    <div class="product-image">
+                                        <img src="img/product/drill.jpg" alt="product">
+                                    </div>
+                                    <div>
+                                        <h4>
+                                            <a href="#">Аккумуляторная дрель-шуруповерт Metabo PowerMaxx BS 2014 Basic
+                                                2.0Ah x2 Case 34</a>
+                                        </h4>
+                                        <ul class="product-data d-flex justify-content-between align-items-center">
+                                            <li class="product-data-item d-flex">
+                                                <span>
+                                                    <i class="ico-comment"></i> 42
+                                                </span>
+                                                <span>
+                                                    <i class="ico-star"></i> 4.8
+                                                </span>
+                                            </li>
+                                            <li class="product-data-item">
+                                                <button class="btn btn-orange ml-auto">В корзину</button>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <span class="product-price">3 490 руб.</span>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <img src="img/seller/citylink.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="product product--horizontally product--add-cart">
+                                    <div class="product-image">
+                                        <img src="img/product/p.jpg" alt="product">
+                                    </div>
+                                    <div>
+                                        <h4>
+                                            <a href="#">Полировальная машина СПЕЦ БМП-1200</a>
+                                        </h4>
+                                        <ul class="product-data d-flex justify-content-between align-items-center">
+                                            <li class="product-data-item d-flex">
+                                                <span>
+                                                    <i class="ico-comment"></i> 42
+                                                </span>
+                                                <span>
+                                                    <i class="ico-star"></i> 4.8
+                                                </span>
+                                            </li>
+                                            <li class="product-data-item">
+                                                <button class="btn btn-orange ml-auto">В корзину</button>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <span class="product-price">3 490 руб.</span>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <img src="img/seller/citylink.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="collapse" id="more">
+                                    <div class="product product--horizontally product--add-cart">
+                                        <div class="product-image">
+                                            <img src="img/product/drill.jpg" alt="product">
+                                        </div>
+                                        <div>
+                                            <h4>
+                                                <a href="#">Аккумуляторная дрель-шуруповерт Metabo PowerMaxx BS 2014
+                                                    Basic 2.0Ah x2 Case 34</a>
+                                            </h4>
+                                            <ul class="product-data d-flex justify-content-between align-items-center">
+                                                <li class="product-data-item d-flex">
+                                                    <span>
+                                                        <i class="ico-comment"></i> 42
+                                                    </span>
+                                                    <span>
+                                                        <i class="ico-star"></i> 4.8
+                                                    </span>
+                                                </li>
+                                                <li class="product-data-item">
+                                                    <button class="btn btn-orange ml-auto">В корзину</button>
+                                                </li>
+                                            </ul>
+                                            <div>
+                                                <span class="product-price">3 490 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <img src="img/seller/citylink.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product product--horizontally product--add-cart">
+                                        <div class="product-image">
+                                            <img src="img/product/p.jpg" alt="product">
+                                        </div>
+                                        <div>
+                                            <h4>
+                                                <a href="#">Полировальная машина СПЕЦ БМП-1200</a>
+                                            </h4>
+                                            <ul class="product-data d-flex justify-content-between align-items-center">
+                                                <li class="product-data-item d-flex">
+                                                    <span>
+                                                        <i class="ico-comment"></i> 42
+                                                    </span>
+                                                    <span>
+                                                        <i class="ico-star"></i> 4.8
+                                                    </span>
+                                                </li>
+                                                <li class="product-data-item">
+                                                    <button class="btn btn-orange ml-auto">В корзину</button>
+                                                </li>
+                                            </ul>
+                                            <div>
+                                                <span class="product-price">3 490 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <img src="img/seller/citylink.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>
+                                        <a class="showhideall collapsed" data-toggle="collapse" href="#more"
+                                            aria-expanded="false" aria-controls="more"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- @import kit/footer.kit-->

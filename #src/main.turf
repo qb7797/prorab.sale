@@ -1,0 +1,548 @@
+<!-- @import kit/head.kit-->
+<title>Главная страница</title>
+<!-- @import kit/header.kit-->
+
+	<div class="app">
+		<!-- @import kit/submenu.kit -->
+		<div class="container">
+			<div class="row">
+				<div class="col-12 px-0 pb-4">
+					<button class="btn btn-main mr-3">Материалы</button>
+					<button class="btn btn-main mr-3">Ремонт и отделка</button>
+					<button class="btn btn-main mr-3 active">Строительство дома</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 px-0 pb-4">
+					<h1 class="pb-4">Калькулятор</h1>
+					<div class="card p-0">
+						<div class="estimate-type card-body d-flex justufy-content-between">
+							<div class="w-100">
+								<button class="btn btn-white d-block mx-auto">
+									<i class="fi flaticon-apartment"></i>
+									Дом</button>
+							</div>
+							<div class="w-100">
+								<button class="btn btn-white d-block mx-auto active">
+									<i class="own ico-blueprint"></i>
+									Фундамент</button>
+							</div>
+							<div class="w-100">
+								<button class="btn btn-white d-block mx-auto">
+									<i class="fi flaticon-wall"></i>
+									Стены</button>
+							</div>
+							<div class="w-100">
+								<button class="btn btn-white d-block mx-auto">
+									<i class="fi flaticon-tile"></i>
+									Кровля</button>
+							</div>
+							<div class="w-100">
+								<button class="btn btn-white d-block mx-auto">
+									<i class="own ico-fence"></i>
+									Заборы</button>
+							</div>
+							<div class="w-100">
+								<button class="btn btn-white d-block mx-auto">
+									<i class="own ico-warmer"></i>
+									Теплотехника</button>
+							</div>
+							<div class="w-100">
+								<button class="btn btn-white d-block mx-auto">
+									<i class="fi flaticon-electricity"></i>
+									Электрика</button>
+							</div>
+							<div class="w-100">
+								<button class="btn btn-white d-block mx-auto">
+									<i class="fi flaticon-parquet"></i>
+									Материалы</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-6 px-0 pb-4">
+					<div class="card mb-0">
+						<div class="card-header no-border pb-0 d-flex align-items-center justify-content-between">
+							<h3 class="d-inline">
+								Фундамент
+							</h3>
+							<ul class="sort d-flex align-items-center">
+								<li class="sort-item mr-0">
+									<a href="#" class="fz-15 d-flex align-items-center">
+										<i class="own ico-circular-arrow-line mr-2"></i> Сбросить
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="card-body">
+							<form>
+								<div class="form-group row">
+									<label for="type1" class="col-12 col-sm-6 col-form-label">Тип фундамента</label>
+									<div class="col-12 col-sm-6">
+										<select id="type1" class="form-control" tabindex="0" data-toggle="popover" data-content="Здесь будет типовой текст подсказки">
+											<option selected>Плитный</option>
+											<option>Ленточный</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="type2" class="col-12 col-sm-6 col-form-label">Марка бетона</label>
+									<div class="col-12 col-sm-6">
+										<select id="type2" class="form-control">
+											<option selected>М200 В15</option>
+											<option>М200 В15</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="type3" class="col-12 col-sm-6 col-form-label">Ширина плиты А</label>
+									<div class="col-12 col-sm-6">
+										<input type="number" class="form-control" id="type3"  tabindex="0" data-toggle="popover" data-content="Здесь будет типовой текст подсказки">
+										<span class="length">м</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="type4" class="col-12 col-sm-6 col-form-label">Длина плиты В</label>
+									<div class="col-12 col-sm-6">
+										<input type="number" class="form-control" id="type4">
+										<span class="length">м</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="type5" class="col-12 col-sm-6 col-form-label">Высота плиты С</label>
+									<div class="col-12 col-sm-6">
+										<input type="number" class="form-control" id="type5">
+										<span class="length">мм</span>
+									</div>
+								</div>
+								<div class="accordion" id="armature">
+									<div class="card p-0 mb-3">
+										<div class="card-header no-border p-1" id="armatureHead">
+											<h4 class="mb-0">
+												<button class="btn btn-link btn-block text-left collapsed" type="button"
+													data-toggle="collapse" data-target="#armatureOne"
+													aria-expanded="true" aria-controls="armatureOne">
+													Расчет арматуры
+												</button>
+											</h4>
+										</div>
+
+										<div id="armatureOne" class="collapse mt-3" aria-labelledby="armatureHead"
+											data-parent="#armature">
+											<div class="card-body">
+												<div class="form-group row">
+													<label for="type6" class="col-12 col-sm-6 col-form-label">Длина стержня
+														арматуры</label>
+													<div class="col-12 col-sm-6">
+														<input type="number" class="form-control" id="type6">
+													</div>
+												</div>
+												<div class="form-group row mb-0">
+													<label for="type7" class="col-12 col-sm-6 col-form-label">Крепление
+														арматуры</label>
+													<div class="col-12 col-sm-6">
+														<select id="type7" class="form-control">
+															<option selected>Сварка</option>
+															<option>Стяжка</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion" id="formwork">
+									<div class="card p-0 mb-3">
+										<div class="card-header no-border p-1" id="formworkHead">
+											<h4 class="mb-0">
+												<button class="btn btn-link btn-block text-left collapsed" type="button"
+													data-toggle="collapse" data-target="#formworkOne"
+													aria-expanded="true" aria-controls="formworkOne">
+													Расчет опалубки
+												</button>
+											</h4>
+										</div>
+
+										<div id="formworkOne" class="collapse mt-3" aria-labelledby="formworkHead"
+											data-parent="#formwork">
+											<div class="card-body">
+												<div class="form-group row">
+													<label for="type8" class="col-12 col-sm-6 col-form-label">Длина стержня
+														арматуры</label>
+													<div class="col-12 col-sm-6">
+														<input type="number" class="form-control" id="type8">
+													</div>
+												</div>
+												<div class="form-group row mb-0">
+													<label for="type9" class="col-12 col-sm-6 col-form-label">Крепление
+														арматуры</label>
+													<div class="col-12 col-sm-6">
+														<select id="type9" class="form-control">
+															<option selected>Сварка</option>
+															<option>Стяжка</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="card-footer pt-3 d-flex align-items-center justify-content-between">
+							<p class="price">Стоимость фундамента: <span class="ml-3">102 654 ₽</span></p>
+							<button class="btn btn-orange">Сохранить</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 pr-0 pb-4">
+					<div class="card p-0 mb-0">
+						<div class="card-header p-30 no-border pb-0 d-flex align-items-center justify-content-center">
+							<h3 class="d-inline">
+								Возводимый объект
+							</h3>
+						</div>
+						<div class="card-body pl-30 pr-30">
+							<picture>
+								<source type="image/webp" srcset="img/estimate/bg1.webp">
+								<source type="image/jpeg" srcset="img/estimate/bg1.jpg">
+								<img src="img/estimate/bg1.png" alt="">
+							</picture>
+						</div>
+						<div
+							class="card-footer card-footer--lightgreen no-border-top pl-30 pr-30 pt-17 pb-17 d-flex align-items-center justify-content-between">
+							<div>
+								<p class="price">Площадь: <span class="ml-3">200 м<sup>2</sup></span></p>
+								<p class="price">Вес: <span class="ml-3">3.4 т</span></p>
+								<p class="price">Стоимость: <span class="ml-3">102 654 ₽</span></p>
+							</div>
+							<div class="d-flex align-items-start flex-column" style="height: 90px;">
+								<p class="mb-auto mt-2"><small><a href="#">Пример итоговой сметы</a></small></p>
+								<button class="btn btn-success w-100" data-toggle="modal" data-target="#exampleModal">Итоговая смета</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 px-0">
+					<div class="card">
+						<div class="card-header rounded-0 d-flex align-items-center justify-content-between">
+							<h3 class="d-inline">
+								Товары по акциям
+							</h3>
+							<ul class="sort d-flex align-items-center">
+								<li class="sort-item">
+									<div class="dropdown">
+										<a class="dropdown-toggle" href="#" role="button" id="order-type1"
+											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											По рейтингу
+										</a>
+
+										<div class="dropdown-menu" aria-labelledby="order-type1">
+											<a class="dropdown-item" href="#">По рейтингу</a>
+											<a class="dropdown-item" href="#">По стоимости</a>
+											<a class="dropdown-item" href="#">По популяности</a>
+										</div>
+									</div>
+								</li>
+								<li class="sort-item">
+									<a href="#">
+										<i class="ico-list"></i>
+									</a>
+								</li>
+								<li class="sort-item">
+									<a href="#" class="active">
+										<i class="ico-tile"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="card-body">
+							<div class="container">
+								<div class="row">
+									<!-- Swiper -->
+									<div class="swiper-container slider-popular">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="product square-short">
+													<div class="product-sale">-50%</div>
+													<div class="product-image">
+														<img src="img/product/item-small.jpg" alt="product">
+													</div>
+													<h4>
+														<a href="#" class="stretched-link">Сварочный аппарат РЕСАНТА САИ-160К (MMA)</a>
+													</h4>
+													<ul
+														class="product-data d-flex justify-content-between align-items-center">
+														<li class="product-data-item d-flex">
+															<span>
+																<i class="ico-comment"></i> 42
+															</span>
+															<span>
+																<i class="ico-star"></i> 4.8
+															</span>
+														</li>
+														<li class="product-data-item">
+															<a href="#">
+																Изменения цены
+															</a>
+														</li>
+													</ul>
+													<div>
+														<span class="product-price">от 3 490 руб.</span>
+														<span class="product-price product-price--old">от 5 990
+															руб.</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="product square-short">
+													<div class="product-sale">-30%</div>
+													<div class="product-image">
+														<img src="img/product/item-small.jpg" alt="product">
+													</div>
+													<h4>
+														<a href="#" class="stretched-link">Сварочный аппарат РЕСАНТА САИ-160К (MMA)</a>
+													</h4>
+													<ul
+														class="product-data d-flex justify-content-between align-items-center">
+														<li class="product-data-item d-flex">
+															<span>
+																<i class="ico-comment"></i> 42
+															</span>
+															<span>
+																<i class="ico-star"></i> 4.8
+															</span>
+														</li>
+														<li class="product-data-item">
+															<a href="#">
+																Изменения цены
+															</a>
+														</li>
+													</ul>
+													<div>
+														<span class="product-price">от 3 490 руб.</span>
+														<span class="product-price product-price--old">от 5 990
+															руб.</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="product square-short">
+													<div class="product-sale">-20%</div>
+													<div class="product-image">
+														<img src="img/product/item-small.jpg" alt="product">
+													</div>
+													<h4>
+														<a href="#" class="stretched-link">Сварочный аппарат РЕСАНТА САИ-160К (MMA)</a>
+													</h4>
+													<ul
+														class="product-data d-flex justify-content-between align-items-center">
+														<li class="product-data-item d-flex">
+															<span>
+																<i class="ico-comment"></i> 42
+															</span>
+															<span>
+																<i class="ico-star"></i> 4.8
+															</span>
+														</li>
+														<li class="product-data-item">
+															<a href="#">
+																Изменения цены
+															</a>
+														</li>
+													</ul>
+													<div>
+														<span class="product-price">от 3 490 руб.</span>
+														<span class="product-price product-price--old">от 5 990
+															руб.</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Add Arrows -->
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 px-0">
+					<div class="card mb-0">
+						<div class="card-header rounded-0 d-flex align-items-center justify-content-between">
+							<h3 class="d-inline">
+								Популярные товары
+							</h3>
+							<ul class="sort d-flex align-items-center">
+								<li class="sort-item">
+									<div class="dropdown">
+										<a class="dropdown-toggle" href="#" role="button" id="order-type2"
+											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											По рейтингу
+										</a>
+
+										<div class="dropdown-menu" aria-labelledby="order-type2">
+											<a class="dropdown-item" href="#">По рейтингу</a>
+											<a class="dropdown-item" href="#">По стоимости</a>
+											<a class="dropdown-item" href="#">По популяности</a>
+										</div>
+									</div>
+								</li>
+								<li class="sort-item">
+									<a href="#">
+										<i class="ico-list"></i>
+									</a>
+								</li>
+								<li class="sort-item">
+									<a href="#" class="active">
+										<i class="ico-tile"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="card-body">
+							<div class="container">
+								<div class="row">
+									<!-- Swiper -->
+									<div class="swiper-container slider-popular">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="product square-short">
+													<div class="product-image">
+														<img src="img/product/item-small.jpg" alt="product">
+													</div>
+													<h4>
+														<a href="#" class="stretched-link">Сварочный аппарат РЕСАНТА САИ-160К (MMA)</a>
+													</h4>
+													<ul
+														class="product-data d-flex justify-content-between align-items-center">
+														<li class="product-data-item d-flex">
+															<span>
+																<i class="ico-comment"></i> 42
+															</span>
+															<span>
+																<i class="ico-star"></i> 4.8
+															</span>
+														</li>
+														<li class="product-data-item">
+															<a href="#">
+																Изменения цены
+															</a>
+														</li>
+													</ul>
+													<div>
+														<span class="product-price">от 3 490 руб.</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="product square-short">
+													<div class="product-image">
+														<img src="img/product/item-small.jpg" alt="product">
+													</div>
+													<h4>
+														<a href="#" class="stretched-link">Сварочный аппарат РЕСАНТА САИ-160К (MMA)</a>
+													</h4>
+													<ul
+														class="product-data d-flex justify-content-between align-items-center">
+														<li class="product-data-item d-flex">
+															<span>
+																<i class="ico-comment"></i> 42
+															</span>
+															<span>
+																<i class="ico-star"></i> 4.8
+															</span>
+														</li>
+														<li class="product-data-item">
+															<a href="#">
+																Изменения цены
+															</a>
+														</li>
+													</ul>
+													<div>
+														<span class="product-price">от 3 490 руб.</span>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="product square-short">
+													<div class="product-image">
+														<img src="img/product/item-small.jpg" alt="product">
+													</div>
+													<h4>
+														<a href="#" class="stretched-link">Сварочный аппарат РЕСАНТА САИ-160К (MMA)</a>
+													</h4>
+													<ul
+														class="product-data d-flex justify-content-between align-items-center">
+														<li class="product-data-item d-flex">
+															<span>
+																<i class="ico-comment"></i> 42
+															</span>
+															<span>
+																<i class="ico-star"></i> 4.8
+															</span>
+														</li>
+														<li class="product-data-item">
+															<a href="#">
+																Изменения цены
+															</a>
+														</li>
+													</ul>
+													<div>
+														<span class="product-price">от 3 490 руб.</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Add Arrows -->
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body py-0">
+					<div class="row">
+						<div class="col-3 d-flex justify-content-center">
+							<div class="round">
+								<i class="own ico-exclamation ico--white"></i>
+							</div>
+						</div>
+						<div class="col-9 d-flex align-items-center">
+							<p>Здесь будет типовой текст предупреждения</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer justify-content-center">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					<button type="button" class="btn btn-success">Я согласен</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- @import kit/footer.kit-->

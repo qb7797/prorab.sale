@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<meta charset="UTF-8">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1"> -->
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+<meta name="description" content="">
+
+<meta property="og:title" content="">
+<meta property="og:type" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+
+
+
+<link rel="stylesheet" href="css/style-orange.css">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+
+<title>Материалы с результатом</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 px-0 d-flex justify-content-between align-items-center">
+                        <div class="dropdown">
+                            Город:
+                            <a class="dropdown-toggle" href="#" role="button" id="city" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Москва
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="city">
+                                <a class="dropdown-item" href="#">Новосибирск</a>
+                                <a class="dropdown-item" href="#">Казань</a>
+                                <a class="dropdown-item" href="#">Самара</a>
+                            </div>
+                        </div>
+                        <div class="top-navigation">
+                            <ul class="d-flex">
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Советы при выборе</a></li>
+                                <li><a href="#">Акции</a></li>
+                                <li><a href="#">Сотрудничество</a></li>
+                            </ul>
+                        </div>
+                        <div class="exit-link">
+                            <a href="#" data-toggle="modal" data-target="#signIn"><i class="right-arrow"></i>Выйти</a>
+                        </div>
+                        <ul class="choose-theme d-flex">
+                            <li class="choose-theme-item">
+                                <button class="orange-grey active"></button>
+                            </li>
+                            <li class="choose-theme-item">
+                                <button class="blue-grey"></button>
+                            </li>
+                            <li class="choose-theme-item">
+                                <button class="red-grey"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 px-0 d-flex justify-content-between">
+                        <div class="d-flex">
+                            <div class="d-flex align-items-center">
+                                <a class="logo" href="/">
+                                    <i class="own ico-logo ico-logo--orange"></i> Prorab.<span>Sale</span>
+                                </a>
+                            </div>
+                            <button id="catalogBtn" class="btn btn-transparent"><i class="burger"></i>Каталог</button>
+                        </div>
+                        <div class="form-group mb-0 position-relative">
+                            <input id="globalSearch" type="text" class="form-control" placeholder="Поиск" autocomplete="off">
+                            <button class="btn btn-link inner-input"><i class="search-ico"></i></button>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <ul class="user-data d-flex">
+                                <li class="user-data-item">
+                                    <a href="#"><i class="ico-stat"></i>
+                                        <span>268</span>
+                                    </a>
+                                </li>
+                                <li class="user-data-item">
+                                    <a href="#"><i class="ico-wish"></i>
+                                        <span>268</span>
+                                    </a>
+                                </li>
+                                <li class="user-data-item">
+                                    <a href="#"><i class="ico-cart"></i>
+                                        <span class="fill-orange">268</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+	<div class="app">
+<div class="catalog hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-4 pl-0">
+						<ul class="catalog-menu">
+							<li class="catalog-menu-item"><a href="#"><i class="fi flaticon-parquet"></i> Стройматериалы</a>
+							</li>
+							<li class="catalog-menu-item"><a href="#">Пиломатериалы</a></li>
+							<li class="catalog-menu-item"><a href="#">Инженерная сантехника</a></li>
+							<li class="catalog-menu-item"><a href="#">Сантехника</a></li>
+							<li class="catalog-menu-item"><a class="active" href="#">Электрика</a></li>
+							<li class="catalog-menu-item"><a href="#">Кабель</a></li>
+							<li class="catalog-menu-item"><a href="#">Крепеж</a></li>
+							<li class="catalog-menu-item"><a href="#">Благоустройство</a></li>
+							<li class="catalog-menu-item"><a href="#">Сухие строительные смеси и гидроизоляция</a></li>
+							<li class="catalog-menu-item"><a href="#">Теплоизоляция и шумоизоляция</a></li>
+							<li class="catalog-menu-item"><a href="#">Материалы для сухого строительства</a></li>
+							<li class="catalog-menu-item"><a href="#">Древесно-плитные материалы</a></li>
+							<li class="catalog-menu-item"><a href="#">Электроинструмент и комплектующие</a></li>
+							<li class="catalog-menu-item"><a href="#">Кровля, сайдинг, водосточные системы</a></li>
+							<li class="catalog-menu-item"><a href="#">Лакокрасоные материалы</a></li>
+							<li class="catalog-menu-item"><a href="#">Пены, клеи, герметики</a></li>
+							<li class="catalog-menu-item"><a href="#">Керамическая плитка и затирки</a></li>
+							<li class="catalog-menu-item"><a href="#">Финишная отделка стен потолков</a></li>
+							<li class="catalog-menu-item"><a href="#">Напольные покрытия</a></li>
+							<li class="catalog-menu-item"><a href="#">Двери, онка, скобяные изделия</a></li>
+							<li class="catalog-menu-item"><a href="#">Отопительное и насосное оборудование</a></li>
+							<li class="catalog-menu-item"><a href="#">Климатическое оборудование</a></li>
+							<li class="catalog-menu-item"><a href="#">Ручной инструмент, спецодежда, хозтовары</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-sm-8">
+						<div class="row catalog-list">
+							<div class="col-12">
+								<h3 class="catalog-title">Электрика</h3>
+							</div>
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-sm-6">
+										<ul class="catalog-submenu">
+											<li class="catalog-submenu-item catalog-submenu-item--title">Автоматы, щитки,
+												счетчики</li>
+											<li class="catalog-submenu-item"><a href="#">Автоматические выключатели</a></li>
+											<li class="catalog-submenu-item"><a href="#">Дифавтоматы и УЗО</a></li>
+											<li class="catalog-submenu-item"><a href="#">Контракторы и комплектующие</a>
+											</li>
+											<li class="catalog-submenu-item"><a href="#">Ограничители напряжения</a></li>
+											<li class="catalog-submenu-item"><a href="#">Распределительные щиты</a></li>
+											<li class="catalog-submenu-item"><a href="#">Реле и комплектующие</a></li>
+										</ul>
+									</div>
+									<div class="col-12 col-sm-6">
+										<ul class="catalog-submenu">
+											<li class="catalog-submenu-item catalog-submenu-item--title">Все для
+												электромонтажа</li>
+											<li class="catalog-submenu-item"><a href="#">Клеммы</a></li>
+											<li class="catalog-submenu-item"><a href="#">Комплектующие для щитов и
+													коробок</a></li>
+											<li class="catalog-submenu-item"><a href="#">Крепление для кабеля</a></li>
+											<li class="catalog-submenu-item"><a href="#">Соединители для кабеля</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12 col-sm-6">
+										<ul class="catalog-submenu">
+											<li class="catalog-submenu-item catalog-submenu-item--title">Лапмы</li>
+											<li class="catalog-submenu-item"><a href="#">Автоматические выключатели</a></li>
+											<li class="catalog-submenu-item"><a href="#">Дифавтоматы и УЗО</a></li>
+											<li class="catalog-submenu-item"><a href="#">Контракторы и комплектующие</a>
+											</li>
+											<li class="catalog-submenu-item"><a href="#">Ограничители напряжения</a></li>
+											<li class="catalog-submenu-item"><a href="#">Распределительные щиты</a></li>
+											<li class="catalog-submenu-item"><a href="#">Реле и комплектующие</a></li>
+										</ul>
+									</div>
+									<div class="col-12 col-sm-6">
+										<ul class="catalog-submenu">
+											<li class="catalog-submenu-item catalog-submenu-item--title">Розетки и
+												выключатели</li>
+											<li class="catalog-submenu-item"><a href="#">Клеммы</a></li>
+											<li class="catalog-submenu-item"><a href="#">Комплектующие для щитов и
+													коробок</a></li>
+											<li class="catalog-submenu-item"><a href="#">Крепление для кабеля</a></li>
+											<li class="catalog-submenu-item"><a href="#">Соединители для кабеля</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12 col-sm-6">
+										<ul class="catalog-submenu">
+											<li class="catalog-submenu-item catalog-submenu-item--title">Светильники и
+												прожекторы</li>
+											<li class="catalog-submenu-item"><a href="#">Автоматические выключатели</a></li>
+											<li class="catalog-submenu-item"><a href="#">Дифавтоматы и УЗО</a></li>
+											<li class="catalog-submenu-item"><a href="#">Контракторы и комплектующие</a>
+											</li>
+											<li class="catalog-submenu-item"><a href="#">Ограничители напряжения</a></li>
+											<li class="catalog-submenu-item"><a href="#">Распределительные щиты</a></li>
+											<li class="catalog-submenu-item"><a href="#">Реле и комплектующие</a></li>
+										</ul>
+									</div>
+									<div class="col-12 col-sm-6">
+										<ul class="catalog-submenu">
+											<li class="catalog-submenu-item catalog-submenu-item--title">Системы наблюдения
+												и оповещения</li>
+											<li class="catalog-submenu-item"><a href="#">Клеммы</a></li>
+											<li class="catalog-submenu-item"><a href="#">Комплектующие для щитов и
+													коробок</a></li>
+											<li class="catalog-submenu-item"><a href="#">Крепление для кабеля</a></li>
+											<li class="catalog-submenu-item"><a href="#">Соединители для кабеля</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		<div class="container">
+			<div class="row">
+				<div class="col-12 px-0 pb-4">
+					<button class="btn btn-main mr-3 active">Материалы</button>
+					<button class="btn btn-main mr-3">Ремонт и отделка</button>
+					<button class="btn btn-main mr-3">Строительство дома</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 px-0 pb-4">
+					<h1>Материалы</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-12 px-0 pb-4">
+					<div class="card mb-0">
+						<div class="card-header rounded-0">
+							<div class="row">
+								<form class="col-10 mb-0 d-flex justify-content-between">
+									<div class="col-7 pl-0 d-flex">
+										<label for="type1" class="d-flex col-form-label pl-0"><i class="own ico-category mr-2"></i> Категория</label>
+										<div class="w-100">
+											<select id="type1" class="form-control">
+												<option selected>Инструменты</option>
+												<option>Инструменты</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-5 d-flex">
+										<label for="type2" class="d-flex col-form-label"><i class="own ico-office-building mr-2"></i> Город</label>
+										<div class="w-100">
+											<select id="type2" class="form-control">
+												<option selected>Москва</option>
+												<option>Москва</option>
+											</select>
+										</div>
+									</div>
+								</form> 
+								<ul class="col-2 sort d-flex align-items-center justify-content-end">
+									<li class="sort-item mr-0">
+										<a href="#" class="fz-15 d-flex align-items-center">
+											<i class="own ico-circular-arrow-line mr-2"></i> Сбросить
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-12 col-sm-5">
+									<div class="card card--grey">
+										<div class="card-header mb-0 card-header--grey no-border d-flex justify-content-between align-items-center">
+											<h3 class="d-inline">Каталог</h3>
+											<span class="badge badge-pill badge-orange text-white">12</span>
+										</div>
+										<div class="card-body">
+											<div class="form-group mb-4 position-relative search-field">
+												<input id="globalCatalog" type="text" class="form-control pr-4" placeholder="Поиск">
+												<button class="btn btn-link inner-input"><i class="search-ico"></i></button>
+											</div>
+											<ul class="filter filter--scroll" style="max-height: 425px; overflow-y: auto;">
+												<li class="filter-item">
+													<div class="filter-item-check d-flex justify-content-between">
+														<div class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input" id="customCheck1">
+															<label class="custom-control-label" for="customCheck1">Электроинструменты</label>
+														</div>
+														<a class="collapsed" data-toggle="collapse" href="#filter1" aria-expanded="false" aria-controls="filter1"></a>
+													</div>
+													<ul class="filter-sub collapse" id="filter1">
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck1-2">
+																<label class="custom-control-label" for="customCheck1-2">Дрели-шуруповерты</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck1-3">
+																<label class="custom-control-label" for="customCheck1-3">Дрели</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck1-4">
+																<label class="custom-control-label" for="customCheck1-4">Шуруповерты</label>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li class="filter-item">
+													<div class="filter-item-check d-flex justify-content-between">
+														<div class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input" id="customCheck2">
+															<label class="custom-control-label" for="customCheck2">Сварочное оборудование</label>
+														</div>
+														<a class="collapsed" data-toggle="collapse" href="#filter2" aria-expanded="false" aria-controls="filter2"></a>
+													</div>
+													<ul class="filter-sub collapse" id="filter2">
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck2-2">
+																<label class="custom-control-label" for="customCheck2-2">Дрели-шуруповерты</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck2-3">
+																<label class="custom-control-label" for="customCheck2-3">Дрели</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck2-4">
+																<label class="custom-control-label" for="customCheck2-4">Шуруповерты</label>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li class="filter-item">
+													<div class="filter-item-check d-flex justify-content-between">
+														<div class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input" id="customCheck3">
+															<label class="custom-control-label" for="customCheck3">Электроинструменты</label>
+														</div>
+														<a class="collapsed" data-toggle="collapse" href="#filter3" aria-expanded="false" aria-controls="filter3"></a>
+													</div>
+													<ul class="filter-sub collapse" id="filter3">
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck3-2">
+																<label class="custom-control-label" for="customCheck3-2">Дрели-шуруповерты</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck3-3">
+																<label class="custom-control-label" for="customCheck3-3">Дрели</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck3-4">
+																<label class="custom-control-label" for="customCheck3-4">Шуруповерты</label>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li class="filter-item">
+													<div class="filter-item-check d-flex justify-content-between">
+														<div class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input" id="customCheck4">
+															<label class="custom-control-label" for="customCheck4">Элементы крепежа и фурнитура</label>
+														</div>
+														<a class="collapsed" data-toggle="collapse" href="#filter4" aria-expanded="false" aria-controls="filter4"></a>
+													</div>
+													<ul class="filter-sub collapse" id="filter4">
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck4-2">
+																<label class="custom-control-label" for="customCheck4-2">Дрели-шуруповерты</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck4-3">
+																<label class="custom-control-label" for="customCheck4-3">Дрели</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck4-4">
+																<label class="custom-control-label" for="customCheck4-4">Шуруповерты</label>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li class="filter-item">
+													<div class="filter-item-check d-flex justify-content-between">
+														<div class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input" id="customCheck5">
+															<label class="custom-control-label" for="customCheck5">Пневмоинструменты</label>
+														</div>
+														<a class="collapsed" data-toggle="collapse" href="#filter5" aria-expanded="false" aria-controls="filter5"></a>
+													</div>
+													<ul class="filter-sub collapse" id="filter5">
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck5-2">
+																<label class="custom-control-label" for="customCheck5-2">Дрели-шуруповерты</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck5-3">
+																<label class="custom-control-label" for="customCheck5-3">Дрели</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck5-4">
+																<label class="custom-control-label" for="customCheck5-4">Шуруповерты</label>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li class="filter-item">
+													<div class="filter-item-check d-flex justify-content-between">
+														<div class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input" id="customCheck6">
+															<label class="custom-control-label" for="customCheck6">Мотобуры и оснастка</label>
+														</div>
+														<a class="collapsed" data-toggle="collapse" href="#filter6" aria-expanded="false" aria-controls="filter6"></a>
+													</div>
+													<ul class="filter-sub collapse" id="filter6">
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck6-2">
+																<label class="custom-control-label" for="customCheck6-2">Дрели-шуруповерты</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck6-3">
+																<label class="custom-control-label" for="customCheck6-3">Дрели</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck6-4">
+																<label class="custom-control-label" for="customCheck6-4">Шуруповерты</label>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li class="filter-item">
+													<div class="filter-item-check d-flex justify-content-between">
+														<div class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input" id="customCheck7">
+															<label class="custom-control-label" for="customCheck7">Электро и бензопилы</label>
+														</div>
+														<a class="collapsed" data-toggle="collapse" href="#filter7" aria-expanded="false" aria-controls="filter7"></a>
+													</div>
+													<ul class="filter-sub collapse" id="filter7">
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck7-2">
+																<label class="custom-control-label" for="customCheck7-2">Дрели-шуруповерты</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck7-3">
+																<label class="custom-control-label" for="customCheck7-3">Дрели</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck7-4">
+																<label class="custom-control-label" for="customCheck7-4">Шуруповерты</label>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li class="filter-item">
+													<div class="filter-item-check d-flex justify-content-between">
+														<div class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input" id="customCheck8">
+															<label class="custom-control-label" for="customCheck8">Измерительный продукт</label>
+														</div>
+														<a class="collapsed" data-toggle="collapse" href="#filter8" aria-expanded="false" aria-controls="filter8"></a>
+													</div>
+													<ul class="filter-sub collapse" id="filter8">
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck8-2">
+																<label class="custom-control-label" for="customCheck8-2">Дрели-шуруповерты</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck8-3">
+																<label class="custom-control-label" for="customCheck8-3">Дрели</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck8-4">
+																<label class="custom-control-label" for="customCheck8-4">Шуруповерты</label>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li class="filter-item">
+													<div class="filter-item-check d-flex justify-content-between">
+														<div class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input" id="customCheck9">
+															<label class="custom-control-label" for="customCheck9">Ручные инструменты</label>
+														</div>
+														<a class="collapsed" data-toggle="collapse" href="#filter9" aria-expanded="false" aria-controls="filter9"></a>
+													</div>
+													<ul class="filter-sub collapse" id="filter9">
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck9-2">
+																<label class="custom-control-label" for="customCheck9-2">Дрели-шуруповерты</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck9-3">
+																<label class="custom-control-label" for="customCheck9-3">Дрели</label>
+															</div>
+														</li>
+														<li class="filter-sub-item">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck9-4">
+																<label class="custom-control-label" for="customCheck9-4">Шуруповерты</label>
+															</div>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-7">
+									<div class="card card--grey">
+										<div class="card-header mb-0 card-header--grey no-border d-flex justify-content-between align-items-center">
+											<h3 class="d-inline">Товары</h3>
+											<span class="badge badge-pill badge-orange text-white">65</span>
+										</div>
+										<div class="card-body">
+											<div class="row align-items-center mb-4">
+												<div class="col-8">
+													<div class="form-group mb-0 position-relative search-field">
+														<input id="globalGoods" type="text" class="form-control pr-4" placeholder="Поиск">
+														<button class="btn btn-link inner-input"><i class="search-ico"></i></button>
+													</div>
+												</div>
+												<div class="col-4">
+													<div class="d-flex justify-content-end">
+														<button class="btn btn-white btn-oneletter p-0 lh-a">Б</button>
+														<button class="btn btn-white btn-oneletter p-0 lh-a">Д</button>
+														<button class="btn btn-white btn-oneletter p-0 lh-a">К</button>
+														<button class="btn btn-white btn-oneletter p-0 lh-a">Р</button>
+														<button class="btn btn-white btn-oneletter p-0 lh-a">С</button>
+														<button class="btn btn-white btn-oneletter p-0 lh-a">>></button>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-12">
+													<dl class="goods m-0" style="max-height: 425px; overflow-y: auto;">
+														<dt class="goods-heading">Сварочное оборудование</dt>
+														<dd class="goods-items">
+															<div class="filter-item-check mb-0 d-flex align-items-center">
+																<div class="custom-control custom-checkbox">
+																	<input type="checkbox" class="custom-control-input" id="goods1">
+																	<label class="custom-control-label" for="goods1"></label>
+																</div>
+																<div class="goods-image">
+																	<img src="img/product/item-small.jpg" alt="">
+																</div>
+																<div class="goods-title">
+																	<a href="#" class="fz-15">Сварочный аппарат САИ-220 в кейсе MMA</a>
+																</div>
+															</div>
+														</dd>
+														<dd class="goods-items">
+															<div class="filter-item-check mb-0 d-flex align-items-center">
+																<div class="custom-control custom-checkbox">
+																	<input type="checkbox" class="custom-control-input" id="goods2">
+																	<label class="custom-control-label" for="goods2"></label>
+																</div>
+																<div class="goods-image">
+																	<img src="img/product/item-small.jpg" alt="">
+																</div>
+																<div class="goods-title">
+																	<a href="#" class="fz-15">Сварочный аппарат САИ-220 в кейсе MMA</a>
+																</div>
+															</div>
+														</dd>
+														<dt class="goods-heading">Электроинструменты</dt>
+														<dd class="goods-items">
+															<div class="filter-item-check mb-0 d-flex align-items-center">
+																<div class="custom-control custom-checkbox">
+																	<input type="checkbox" class="custom-control-input" id="goods3">
+																	<label class="custom-control-label" for="goods3"></label>
+																</div>
+																<div class="goods-image">
+																	<img src="img/product/item-small.jpg" alt="">
+																</div>
+																<div class="goods-title">
+																	<a href="#" class="fz-15">Сварочный аппарат САИ-220 в кейсе MMA</a>
+																</div>
+															</div>
+														</dd>
+														<dd class="goods-items">
+															<div class="filter-item-check mb-0 d-flex align-items-center">
+																<div class="custom-control custom-checkbox">
+																	<input type="checkbox" class="custom-control-input" id="goods4">
+																	<label class="custom-control-label" for="goods4"></label>
+																</div>
+																<div class="goods-image">
+																	<img src="img/product/item-small.jpg" alt="">
+																</div>
+																<div class="goods-title">
+																	<a href="#" class="fz-15">Сварочный аппарат САИ-220 в кейсе MMA</a>
+																</div>
+															</div>
+														</dd>
+														<dt class="goods-heading">Сварочное оборудование</dt>
+														<dd class="goods-items">
+															<div class="filter-item-check mb-0 d-flex align-items-center">
+																<div class="custom-control custom-checkbox">
+																	<input type="checkbox" class="custom-control-input" id="goods5">
+																	<label class="custom-control-label" for="goods5"></label>
+																</div>
+																<div class="goods-image">
+																	<img src="img/product/item-small.jpg" alt="">
+																</div>
+																<div class="goods-title">
+																	<a href="#" class="fz-15">Сварочный аппарат САИ-220 в кейсе MMA</a>
+																</div>
+															</div>
+														</dd>
+														<dd class="goods-items">
+															<div class="filter-item-check mb-0 d-flex align-items-center">
+																<div class="custom-control custom-checkbox">
+																	<input type="checkbox" class="custom-control-input" id="goods6">
+																	<label class="custom-control-label" for="goods6"></label>
+																</div>
+																<div class="goods-image">
+																	<img src="img/product/item-small.jpg" alt="">
+																</div>
+																<div class="goods-title">
+																	<a href="#" class="fz-15">Сварочный аппарат САИ-220 в кейсе MMA</a>
+																</div>
+															</div>
+														</dd>
+														<dt class="goods-heading">Электроинструменты</dt>
+														<dd class="goods-items">
+															<div class="filter-item-check mb-0 d-flex align-items-center">
+																<div class="custom-control custom-checkbox">
+																	<input type="checkbox" class="custom-control-input" id="goods7">
+																	<label class="custom-control-label" for="goods7"></label>
+																</div>
+																<div class="goods-image">
+																	<img src="img/product/item-small.jpg" alt="">
+																</div>
+																<div class="goods-title">
+																	<a href="#" class="fz-15">Сварочный аппарат САИ-220 в кейсе MMA</a>
+																</div>
+															</div>
+														</dd>
+														<dd class="goods-items">
+															<div class="filter-item-check mb-0 d-flex align-items-center">
+																<div class="custom-control custom-checkbox">
+																	<input type="checkbox" class="custom-control-input" id="goods8">
+																	<label class="custom-control-label" for="goods8"></label>
+																</div>
+																<div class="goods-image">
+																	<img src="img/product/item-small.jpg" alt="">
+																</div>
+																<div class="goods-title">
+																	<a href="#" class="fz-15">Сварочный аппарат САИ-220 в кейсе MMA</a>
+																</div>
+															</div>
+														</dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer pt-3 d-flex align-items-center">
+							<div class="row w-100">
+								<div class="col-4 d-flex align-items-center">
+									<p>Выбрано товаров: <span><b>65</b></span></p>
+								</div>
+								<div class="col-8 d-flex justify-content-between">
+									<div class="goods-filter d-flex">
+										<div class="filter-item-check d-flex justify-content-between mb-0 mx-3">
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck11-1">
+												<label class="custom-control-label" for="customCheck11-1">В наличии</label>
+											</div>
+										</div>
+										<div class="filter-item-check d-flex justify-content-between mb-0 mx-3">
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck11-2">
+												<label class="custom-control-label" for="customCheck11-2">Минимальная цена</label>
+											</div>
+										</div>
+										<div class="filter-item-check d-flex justify-content-between mb-0 mx-3">
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck11-3">
+												<label class="custom-control-label" for="customCheck11-3">Цена/Качество</label>
+											</div>
+										</div>
+									</div>
+									<button class="btn btn-orange">Найти товары</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-12 px-0 pb-4">
+					<div class="alert alert-success mb-0" role="alert">
+						<div class="row">
+							<div class="col-4">
+								<p>Поиск завершен: <span class="text-success ml-1"><b>100%</b></span></p>
+							</div>
+							<div class="col-8">
+								<div class="d-flex">
+									<p>Найдено товаров: <span class="ml-1"><b>254</b></span></p>
+									<p class="ml-3">Цена от: <span class="ml-1"><b>3 290 руб.</b></span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4 pl-0">
+					<div class="card p-20">
+						<div class="card-header no-border mb-0 pb-0 rounded-0">
+							<h4 class="d-inline">
+								<a class="arrowupdown collapsed" data-toggle="collapse" href="#electroEquipment" aria-expanded="false" aria-controls="electroEquipment">
+									Электроинструмент
+								</a>
+							</h4>
+						</div>
+						<div class="card-body">
+							<div class="collapse  pt-30" id="electroEquipment">
+								<div class="option">
+									<div class="option-title">
+										<p>Цена, руб. </p>
+									</div>
+									<div class="option-body">
+										<div class="input-group">
+											<input type="text" class="form-control w-90px flex-none">
+											<span class="mx-3">-</span>
+											<input type="text" class="form-control w-90px flex-none">
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<div class="option-title">
+										<p>Производитель</p>
+									</div>
+									<div class="option-body">
+										<div class="form-group mb-4 position-relative search-field">
+											<input id="globalManufacturerElectroEquipment" type="text" class="form-control pr-4" placeholder="Поиск">
+											<button class="btn btn-link inner-input"><i class="search-ico"></i></button>
+										</div>
+										<div style="max-height: 160px; overflow-y: auto;">
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck15-1">
+												<label class="custom-control-label" for="customCheck15-1">Зубр</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck15-2">
+												<label class="custom-control-label" for="customCheck15-2">Ресанта</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck15-3">
+												<label class="custom-control-label" for="customCheck15-3">Сварог</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck15-4">
+												<label class="custom-control-label" for="customCheck15-4">Зубр</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck15-5">
+												<label class="custom-control-label" for="customCheck15-5">Ресанта</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck15-6">
+												<label class="custom-control-label" for="customCheck15-6">Сварог</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck15-7">
+												<label class="custom-control-label" for="customCheck15-7">Зубр</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck15-8">
+												<label class="custom-control-label" for="customCheck15-8">Ресанта</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck15-9">
+												<label class="custom-control-label" for="customCheck15-9">Сварог</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<div class="option-title">
+										<p>Тип аппарата</p>
+									</div>
+									<div class="option-body">
+										<div style="max-height: 160px; overflow-y: auto;">
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck16-1">
+												<label class="custom-control-label" for="customCheck16-1">Инвертор</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck16-2">
+												<label class="custom-control-label" for="customCheck16-2">Трансформатор</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<div class="option-title">
+										<p>Мощность, кВт </p>
+									</div>
+									<div class="option-body">
+										<div class="input-group">
+											<input type="text" class="form-control w-90px flex-none">
+											<span class="mx-3">-</span>
+											<input type="text" class="form-control w-90px flex-none">
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<div class="option-title">
+										<p>Доставка</p>
+									</div>
+									<div class="option-body">
+										<div style="max-height: 160px; overflow-y: auto;">
+											<div class="custom-control custom-radio d-flex align-items-center">
+												<input type="radio" name="delivery1" class="custom-control-input" id="customCheck17-1">
+												<label class="custom-control-label" for="customCheck17-1">Курьером</label>
+											</div>
+											<div class="custom-control custom-radio d-flex align-items-center">
+												<input type="radio" name="delivery1" class="custom-control-input" id="customCheck17-2">
+												<label class="custom-control-label" for="customCheck17-2">Самовывоз</label>
+											</div>
+											<div class="collapse" id="deliveryTypes0">
+												<div class="custom-control custom-radio d-flex align-items-center">
+													<input type="radio" name="delivery1" class="custom-control-input" id="customCheck17-3">
+													<label class="custom-control-label" for="customCheck17-3">Boxberry</label>
+												</div>
+												<div class="custom-control custom-radio d-flex align-items-center">
+													<input type="radio" name="delivery1" class="custom-control-input" id="customCheck17-4">
+													<label class="custom-control-label" for="customCheck17-4">PickPoint</label>
+												</div>
+											</div>
+											<p>
+												<a class="showhideall" data-toggle="collapse" href="#deliveryTypes0" aria-expanded="false" aria-controls="deliveryTypes0"></a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card p-20">
+						<div class="card-header no-border mb-0 pb-0 rounded-0">
+							<h4 class="d-inline">
+								<a class="arrowupdown collapsed" data-toggle="collapse" href="#weldingEquipment" aria-expanded="false" aria-controls="weldingEquipment">
+									Сварочное аппараты
+								</a>
+							</h4>
+						</div>
+						<div class="card-body">
+							<div class="collapse  pt-30" id="weldingEquipment">
+								<div class="option">
+									<div class="option-title">
+										<p>Цена, руб. </p>
+									</div>
+									<div class="option-body">
+										<div class="input-group">
+											<input type="text" class="form-control w-90px flex-none">
+											<span class="mx-3">-</span>
+											<input type="text" class="form-control w-90px flex-none">
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<div class="option-title">
+										<p>Производитель</p>
+									</div>
+									<div class="option-body">
+										<div class="form-group mb-4 position-relative search-field">
+											<input id="globalManufacturerWeldingEquipment" type="text" class="form-control pr-4" placeholder="Поиск">
+											<button class="btn btn-link inner-input"><i class="search-ico"></i></button>
+										</div>
+										<div style="max-height: 160px; overflow-y: auto;">
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck12-1">
+												<label class="custom-control-label" for="customCheck12-1">Зубр</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck12-2">
+												<label class="custom-control-label" for="customCheck12-2">Ресанта</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck12-3">
+												<label class="custom-control-label" for="customCheck12-3">Сварог</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck12-4">
+												<label class="custom-control-label" for="customCheck12-4">Зубр</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck12-5">
+												<label class="custom-control-label" for="customCheck12-5">Ресанта</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck12-6">
+												<label class="custom-control-label" for="customCheck12-6">Сварог</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck12-7">
+												<label class="custom-control-label" for="customCheck12-7">Зубр</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck12-8">
+												<label class="custom-control-label" for="customCheck12-8">Ресанта</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck12-9">
+												<label class="custom-control-label" for="customCheck12-9">Сварог</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<div class="option-title">
+										<p>Тип аппарата</p>
+									</div>
+									<div class="option-body">
+										<div style="max-height: 160px; overflow-y: auto;">
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck13-1">
+												<label class="custom-control-label" for="customCheck13-1">Инвертор</label>
+											</div>
+											<div class="custom-control custom-checkbox d-flex align-items-center">
+												<input type="checkbox" class="custom-control-input" id="customCheck13-2">
+												<label class="custom-control-label" for="customCheck13-2">Трансформатор</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<div class="option-title">
+										<p>Мощность, кВт </p>
+									</div>
+									<div class="option-body">
+										<div class="input-group">
+											<input type="text" class="form-control w-90px flex-none">
+											<span class="mx-3">-</span>
+											<input type="text" class="form-control w-90px flex-none">
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<div class="option-title">
+										<p>Доставка</p>
+									</div>
+									<div class="option-body">
+										<div style="max-height: 160px; overflow-y: auto;">
+											<div class="custom-control custom-radio d-flex align-items-center">
+												<input type="radio" name="delivery" class="custom-control-input" id="customCheck14-1">
+												<label class="custom-control-label" for="customCheck14-1">Курьером</label>
+											</div>
+											<div class="custom-control custom-radio d-flex align-items-center">
+												<input type="radio" name="delivery" class="custom-control-input" id="customCheck14-2">
+												<label class="custom-control-label" for="customCheck14-2">Самовывоз</label>
+											</div>
+											<div class="collapse" id="deliveryTypes">
+												<div class="custom-control custom-radio d-flex align-items-center">
+													<input type="radio" name="delivery" class="custom-control-input" id="customCheck14-3">
+													<label class="custom-control-label" for="customCheck14-3">Boxberry</label>
+												</div>
+												<div class="custom-control custom-radio d-flex align-items-center">
+													<input type="radio" name="delivery" class="custom-control-input" id="customCheck14-4">
+													<label class="custom-control-label" for="customCheck14-4">PickPoint</label>
+												</div>
+											</div>
+											<p>
+												<a class="showhideall" data-toggle="collapse" href="#deliveryTypes" aria-expanded="false" aria-controls="deliveryTypes"></a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-8 pr-0">
+					<div class="card">
+						<div class="card-header rounded-0 d-flex align-items-center justify-content-between">
+							<h4 class="d-inline">
+								Сварочные аппараты
+							</h4>
+							<ul class="sort d-flex align-items-center">
+								<li class="sort-item">
+									<div class="dropdown">
+										<a class="dropdown-toggle" href="#" role="button" id="order-type4"
+											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											По рейтингу
+										</a>
+
+										<div class="dropdown-menu" aria-labelledby="order-type4">
+											<a class="dropdown-item" href="#">По рейтингу</a>
+											<a class="dropdown-item" href="#">По стоимости</a>
+											<a class="dropdown-item" href="#">По популяности</a>
+										</div>
+									</div>
+								</li>
+								<li class="sort-item">
+									<a href="#" class="active">
+										<i class="ico-list"></i>
+									</a>
+								</li>
+								<li class="sort-item">
+									<a href="#">
+										<i class="ico-tile"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="card-body">
+							<div class="container">
+								<div class="row">
+									<div class="product product--horizontally">
+										<div class="product-image">
+											<img src="img/product/item-small.jpg" alt="product">
+										</div>
+										<div>
+											<h4>
+												<a href="#">Сварочный аппарат РЕСАНТА САИ-160К (MMA)</a>
+											</h4>
+											<ul
+												class="product-data d-flex justify-content-between align-items-center">
+												<li class="product-data-item d-flex">
+													<span>
+														<i class="ico-comment"></i> 42
+													</span>
+													<span>
+														<i class="ico-star"></i> 4.8
+													</span>
+												</li>
+												<li class="product-data-item">
+													<a class="arrowupdown collapsed right--20" data-toggle="collapse" href="#whereBuyWeldingEquipment-1" aria-expanded="false" aria-controls="whereBuyWeldingEquipment-1">
+														Все цены (2)
+													</a>
+												</li>
+											</ul>
+											<div>
+												<span class="product-price">от 3 490 руб.</span>
+											</div>
+										</div>
+									</div>
+									<div class="collapse" id="whereBuyWeldingEquipment-1">
+										<!--Class product-add-cart was added only for clarity of code, if it is present, then there "Add to cart" button. If not required, you can remove -->
+										<div class="product product--horizontally product--add-cart">
+											<div class="product-image">
+												<img src="img/seller/220v.jpg" alt="product">
+											</div>
+											<div>
+												<h4>
+													<a href="#">Сварочный аппарат РЕСАНТА САИ-160К (MMA)</a>
+												</h4>
+												<ul
+													class="product-data d-flex justify-content-between align-items-center">
+													<li class="product-data-item d-flex">
+														<span>
+															<i class="ico-comment"></i> 42
+														</span>
+														<span>
+															<i class="ico-star"></i> 4.8
+														</span>
+													</li>
+													<li class="product-data-item">
+														<a href="#">
+															История цены
+														</a>
+													</li>
+												</ul>
+												<div>
+													<span class="product-price">3 490 руб.</span>
+												</div>
+											</div>
+											<button class="btn btn-orange ml-auto">В корзину</button>
+										</div>
+										<!--Class product-add-cart was added only for clarity of code, if it is present, then there "Add to cart" button. If not required, you can remove -->
+										<div class="product product--horizontally product--add-cart">
+											<div class="product-image">
+												<img src="img/seller/citylink.jpg" alt="product">
+											</div>
+											<div>
+												<h4>
+													<a href="#">Сварочный аппарат РЕСАНТА САИ-160К (MMA)</a>
+												</h4>
+												<ul
+													class="product-data d-flex justify-content-between align-items-center">
+													<li class="product-data-item d-flex">
+														<span>
+															<i class="ico-comment"></i> 66
+														</span>
+														<span>
+															<i class="ico-star"></i> 3.3
+														</span>
+													</li>
+													<li class="product-data-item">
+														<a href="#">
+															История цены
+														</a>
+													</li>
+												</ul>
+												<div>
+													<span class="product-price">66 490 руб.</span>
+												</div>
+											</div>
+											<button class="btn btn-orange ml-auto">В корзину</button>
+										</div>		
+									</div>
+									<div class="product product--horizontally">
+										<div class="product-image">
+											<img src="img/product/item-small.jpg" alt="product">
+										</div>
+										<div>
+											<h4>
+												<a href="#">Аппарат РЕСАНТА САИ-160К (MMA)</a>
+											</h4>
+											<ul
+												class="product-data d-flex justify-content-between align-items-center">
+												<li class="product-data-item d-flex">
+													<span>
+														<i class="ico-comment"></i> 22
+													</span>
+													<span>
+														<i class="ico-star"></i> 1.8
+													</span>
+												</li>
+												<li class="product-data-item">
+													<a class="arrowupdown collapsed right--20" data-toggle="collapse" href="#whereBuyWeldingEquipment-2" aria-expanded="false" aria-controls="whereBuyWeldingEquipment-2">
+														Все цены (2)
+													</a>
+												</li>
+											</ul>
+											<div>
+												<span class="product-price">от 9 490 руб.</span>
+											</div>
+										</div>
+									</div>
+									<div class="collapse" id="whereBuyWeldingEquipment-2">
+										<!--Class product-add-cart was added only for clarity of code, if it is present, then there "Add to cart" button. If not required, you can remove -->
+										<div class="product product--horizontally product--add-cart">
+											<div class="product-image">
+												<img src="img/seller/220v.jpg" alt="product">
+											</div>
+											<div>
+												<h4>
+													<a href="#">Сварочный аппарат РЕСАНТА САИ-160К (MMA)</a>
+												</h4>
+												<ul
+													class="product-data d-flex justify-content-between align-items-center">
+													<li class="product-data-item d-flex">
+														<span>
+															<i class="ico-comment"></i> 42
+														</span>
+														<span>
+															<i class="ico-star"></i> 4.8
+														</span>
+													</li>
+													<li class="product-data-item">
+														<a href="#">
+															История цены
+														</a>
+													</li>
+												</ul>
+												<div>
+													<span class="product-price">3 490 руб.</span>
+												</div>
+											</div>
+											<button class="btn btn-orange ml-auto">В корзину</button>
+										</div>
+										<!--Class product-add-cart was added only for clarity of code, if it is present, then there "Add to cart" button. If not required, you can remove -->
+										<div class="product product--horizontally product--add-cart no-border pb-0 mb-0">
+											<div class="product-image">
+												<img src="img/seller/citylink.jpg" alt="product">
+											</div>
+											<div>
+												<h4>
+													<a href="#">Сварочный аппарат РЕСАНТА САИ-160К (MMA)</a>
+												</h4>
+												<ul
+													class="product-data d-flex justify-content-between align-items-center">
+													<li class="product-data-item d-flex">
+														<span>
+															<i class="ico-comment"></i> 66
+														</span>
+														<span>
+															<i class="ico-star"></i> 3.3
+														</span>
+													</li>
+													<li class="product-data-item">
+														<a href="#">
+															История цены
+														</a>
+													</li>
+												</ul>
+												<div>
+													<span class="product-price">66 490 руб.</span>
+												</div>
+											</div>
+											<button class="btn btn-orange ml-auto">В корзину</button>
+										</div>		
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!--   Сварочные аппараты  -->
+					<div class="card mb-0">
+						<div class="card-header rounded-0 d-flex align-items-center justify-content-between">
+							<h4 class="d-inline">
+								Электроинструменты
+							</h4>
+							<ul class="sort d-flex align-items-center">
+								<li class="sort-item">
+									<div class="dropdown">
+										<a class="dropdown-toggle" href="#" role="button" id="order-type3"
+											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											По рейтингу
+										</a>
+
+										<div class="dropdown-menu" aria-labelledby="order-type3">
+											<a class="dropdown-item" href="#">По рейтингу</a>
+											<a class="dropdown-item" href="#">По стоимости</a>
+											<a class="dropdown-item" href="#">По популяности</a>
+										</div>
+									</div>
+								</li>
+								<li class="sort-item">
+									<a href="#" class="active">
+										<i class="ico-list"></i>
+									</a>
+								</li>
+								<li class="sort-item">
+									<a href="#">
+										<i class="ico-tile"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="card-body">
+							<div class="container">
+								<div class="row">
+									<div class="product product--horizontally">
+										<div class="product-image">
+											<img src="img/product/drill.jpg" alt="product">
+										</div>
+										<div>
+											<h4>
+												<a href="#">Аккумуляторная дрель-шуруповерт PATRIOT BR 114Li 25</a>
+											</h4>
+											<ul
+												class="product-data d-flex justify-content-between align-items-center">
+												<li class="product-data-item d-flex">
+													<span>
+														<i class="ico-comment"></i> 42
+													</span>
+													<span>
+														<i class="ico-star"></i> 4.8
+													</span>
+												</li>
+												<li class="product-data-item">
+													<a class="arrowupdown collapsed right--20" data-toggle="collapse" href="#whereBuyElectroEquipment-1" aria-expanded="false" aria-controls="whereBuyElectroEquipment-1">
+														Все цены (2)
+													</a>
+												</li>
+											</ul>
+											<div>
+												<span class="product-price">от 12 490 руб.</span>
+											</div>
+										</div>
+									</div>
+									<div class="collapse" id="whereBuyElectroEquipment-1">
+										<!--Class product-add-cart was added only for clarity of code, if it is present, then there "Add to cart" button. If not required, you can remove -->
+										<div class="product product--horizontally product--add-cart">
+											<div class="product-image">
+												<img src="img/seller/220v.jpg" alt="product">
+											</div>
+											<div>
+												<h4>
+													<a href="#">Аккумуляторная дрель-шуруповерт PATRIOT BR 114Li 25</a>
+												</h4>
+												<ul
+													class="product-data d-flex justify-content-between align-items-center">
+													<li class="product-data-item d-flex">
+														<span>
+															<i class="ico-comment"></i> 42
+														</span>
+														<span>
+															<i class="ico-star"></i> 4.8
+														</span>
+													</li>
+													<li class="product-data-item">
+														<a href="#">
+															История цены
+														</a>
+													</li>
+												</ul>
+												<div>
+													<span class="product-price">3 490 руб.</span>
+												</div>
+											</div>
+											<button class="btn btn-orange ml-auto">В корзину</button>
+										</div>
+										<!--Class product-add-cart was added only for clarity of code, if it is present, then there "Add to cart" button. If not required, you can remove -->
+										<div class="product product--horizontally product--add-cart">
+											<div class="product-image">
+												<img src="img/seller/citylink.jpg" alt="product">
+											</div>
+											<div>
+												<h4>
+													<a href="#">Аккумуляторная дрель-шуруповерт PATRIOT BR 114Li 25</a>
+												</h4>
+												<ul
+													class="product-data d-flex justify-content-between align-items-center">
+													<li class="product-data-item d-flex">
+														<span>
+															<i class="ico-comment"></i> 66
+														</span>
+														<span>
+															<i class="ico-star"></i> 3.3
+														</span>
+													</li>
+													<li class="product-data-item">
+														<a href="#">
+															История цены
+														</a>
+													</li>
+												</ul>
+												<div>
+													<span class="product-price">66 490 руб.</span>
+												</div>
+											</div>
+											<button class="btn btn-orange ml-auto">В корзину</button>
+										</div>		
+									</div>
+									<div class="product product--horizontally">
+										<div class="product-image">
+											<img src="img/product/drill.jpg" alt="product">
+										</div>
+										<div>
+											<h4>
+												<a href="#">Аккумуляторная дрель-шуруповерт Metabo PowerMaxx BS 2014 Basic 2.0Ah x2 Case 34</a>
+											</h4>
+											<ul
+												class="product-data d-flex justify-content-between align-items-center">
+												<li class="product-data-item d-flex">
+													<span>
+														<i class="ico-comment"></i> 322
+													</span>
+													<span>
+														<i class="ico-star"></i> 2.2
+													</span>
+												</li>
+												<li class="product-data-item">
+													<a class="arrowupdown collapsed right--20" data-toggle="collapse" href="#whereBuyElectroEquipment-2" aria-expanded="false" aria-controls="whereBuyElectroEquipment-2">
+														Все цены (2)
+													</a>
+												</li>
+											</ul>
+											<div>
+												<span class="product-price">от 9 490 руб.</span>
+											</div>
+										</div>
+									</div>
+									<div class="collapse" id="whereBuyElectroEquipment-2">
+										<!--Class product-add-cart was added only for clarity of code, if it is present, then there "Add to cart" button. If not required, you can remove -->
+										<div class="product product--horizontally product--add-cart">
+											<div class="product-image">
+												<img src="img/seller/220v.jpg" alt="product">
+											</div>
+											<div>
+												<h4>
+													<a href="#">Аккумуляторная дрель-шуруповерт Metabo PowerMaxx BS 2014 Basic 2.0Ah x2 Case 34</a>
+												</h4>
+												<ul
+													class="product-data d-flex justify-content-between align-items-center">
+													<li class="product-data-item d-flex">
+														<span>
+															<i class="ico-comment"></i> 42
+														</span>
+														<span>
+															<i class="ico-star"></i> 4.8
+														</span>
+													</li>
+													<li class="product-data-item">
+														<a href="#">
+															История цены
+														</a>
+													</li>
+												</ul>
+												<div>
+													<span class="product-price">3 490 руб.</span>
+												</div>
+											</div>
+											<button class="btn btn-orange ml-auto">В корзину</button>
+										</div>
+										<!--Class product-add-cart was added only for clarity of code, if it is present, then there "Add to cart" button. If not required, you can remove -->
+										<div class="product product--horizontally product--add-cart no-border pb-0 mb-0">
+											<div class="product-image">
+												<img src="img/seller/citylink.jpg" alt="product">
+											</div>
+											<div>
+												<h4>
+													<a href="#">Аккумуляторная дрель-шуруповерт Metabo PowerMaxx BS 2014 Basic 2.0Ah x2 Case 34</a>
+												</h4>
+												<ul
+													class="product-data d-flex justify-content-between align-items-center">
+													<li class="product-data-item d-flex">
+														<span>
+															<i class="ico-comment"></i> 66
+														</span>
+														<span>
+															<i class="ico-star"></i> 3.3
+														</span>
+													</li>
+													<li class="product-data-item">
+														<a href="#">
+															История цены
+														</a>
+													</li>
+												</ul>
+												<div>
+													<span class="product-price">66 490 руб.</span>
+												</div>
+											</div>
+											<button class="btn btn-orange ml-auto">В корзину</button>
+										</div>		
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!--   Электроинструменты  -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-3">
+					<p class="mb-0">&copy; 2020 Prorab.Sale</p>
+				</div>
+				<div class="col-9">
+					<p class="mb-0"><a href="#">Партнерское соглашение</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- SignIn -->
+	<div class="modal fade" id="signIn" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered w-360">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body pr-30 pl-30">
+					<h5 class="modal-title text-center mt--32 mb-3 fz-22">Вход</h5>
+					<div class="row">
+						<div class="col-12">
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Телефон или почта">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Пароль">
+								</div>
+								<div class="form-group">
+									<div class="d-flex justify-content-between">
+										<div class="filter-item-check d-flex justify-content-between m-0">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox"
+													class="custom-control-input"
+													id="customCheck1">
+												<label class="custom-control-label" for="customCheck1">Запомнить пароль</label>
+											</div>
+										</div>
+										<a href="#" class="fz-15">Забыл пароль</a>
+									</div>
+								</div>
+								<div class="form-group d-flex justify-content-around">
+									<button class="btn btn-orange px-4">Войти</button>
+								</div>
+							</form>
+							<p class="text-center mb-3">Войти через:</p>
+							<div class="d-flex justify-content-around">
+								<ul class="signin d-flex justify-content-between">
+									<li class="signin-item">
+										<a href="#">
+											<img src="img/icon/social/vk.svg" alt="">
+										</a>
+									</li>
+									<li class="signin-item">
+										<a href="#">
+											<img src="img/icon/social/fb.svg" alt="">
+										</a>
+									</li>
+									<li class="signin-item">
+										<a href="#">
+											<img src="img/icon/social/gp.svg" alt="">
+										</a>
+									</li>
+									<li class="signin-item">
+										<a href="#">
+											<img src="img/icon/social/ok.svg" alt="">
+										</a>
+									</li>
+									<li class="signin-item">
+										<a href="#">
+											<img src="img/icon/social/ap.svg" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer border-top justify-content-center mx-30">
+					<a href="#" class="text-center mb-3">Зарегистрироваться</a>
+					<p class="fz-14 m-0 mb-2">При входе вы соглашаетесь с <a href="#">политикой конфиденциальности</a> ProrabSale</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/main.js"></script>
+	<script>
+		const themeSelect = document.querySelectorAll('.choose-theme button')
+		const themeLink = document.querySelector("link[rel='stylesheet']")
+		for (let i = 0; i < themeSelect.length; i++) {
+			const element = themeSelect[i];
+			
+			element.addEventListener('click', function(){
+				if(this.classList.contains('orange-grey')){
+					themeLink.setAttribute('href', 'css/style-orange.css');
+					for (let i = 0; i < this.parentNode.parentNode.children.length; i++) {
+						this.parentNode.parentNode.children[i].children[0].classList.remove('active');
+					}
+					this.classList.add('active')
+				} else if(this.classList.contains('blue-grey')) {
+					themeLink.setAttribute('href', 'css/style-blue.css');
+					for (let i = 0; i < this.parentNode.parentNode.children.length; i++) {
+						this.parentNode.parentNode.children[i].children[0].classList.remove('active');
+					}
+					this.classList.add('active')
+				} else if(this.classList.contains('red-grey')){
+					themeLink.setAttribute('href', 'css/style-red.css');
+					for (let i = 0; i < this.parentNode.parentNode.children.length; i++) {
+						this.parentNode.parentNode.children[i].children[0].classList.remove('active');
+					}
+					this.classList.add('active')
+				}
+			})
+		}
+		
+
+	</script>
+
+</body>
+
+</html>

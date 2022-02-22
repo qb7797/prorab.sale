@@ -1,0 +1,518 @@
+<!-- @import kit/head.kit-->
+<title>Смета</title>
+<!-- @import kit/header.kit-->
+
+	<div class="app">
+		<!-- @import kit/submenu.kit -->
+		<div class="container">
+			<div class="row">
+				<div class="col-12 px-0 pb-4">
+					<button class="btn btn-main mr-3">Материалы</button>
+					<button class="btn btn-main mr-3">Ремонт и отделка</button>
+					<button class="btn btn-main mr-3 active">Строительство дома</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 px-0 pb-4">
+					<h1 class="pb-4">Калькулятор</h1>
+					<div class="card p-0">
+						<div class="estimate-type card-body d-flex justufy-content-between">
+							<div class="w-100">
+								<button class="btn btn-white d-block mx-auto">
+									<i class="fi flaticon-apartment"></i>
+									Дом</button>
+							</div>
+							<div class="w-100">
+								<button class="btn btn-white d-block mx-auto active">
+									<i class="own ico-blueprint"></i>
+									Фундамент</button>
+							</div>
+							<div class="w-100">
+								<button class="btn btn-white d-block mx-auto">
+									<i class="fi flaticon-wall"></i>
+									Стены</button>
+							</div>
+							<div class="w-100">
+								<button class="btn btn-white d-block mx-auto">
+									<i class="fi flaticon-tile"></i>
+									Кровля</button>
+							</div>
+							<div class="w-100">
+								<button class="btn btn-white d-block mx-auto">
+									<i class="own ico-fence"></i>
+									Заборы</button>
+							</div>
+							<div class="w-100">
+								<button class="btn btn-white d-block mx-auto">
+									<i class="own ico-warmer"></i>
+									Теплотехника</button>
+							</div>
+							<div class="w-100">
+								<button class="btn btn-white d-block mx-auto">
+									<i class="fi flaticon-electricity"></i>
+									Электрика</button>
+							</div>
+							<div class="w-100">
+								<button class="btn btn-white d-block mx-auto">
+									<i class="fi flaticon-parquet"></i>
+									Материалы</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-6 px-0 pb-4">
+					<div class="card mb-0" style="min-height: 620px;">
+						<div class="card-header no-border pb-0 d-flex align-items-center justify-content-between">
+							<h3 class="d-inline">
+								Фундамент
+							</h3>
+							<ul class="sort d-flex align-items-center">
+								<li class="sort-item mr-0">
+									<a href="#" class="fz-15 d-flex align-items-center">
+										<i class="own ico-circular-arrow-line mr-2"></i> Сбросить
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="card-body">
+							<form>
+								<div class="form-group row">
+									<label for="type1" class="col-12 col-sm-6 col-form-label">Тип фундамента</label>
+									<div class="col-12 col-sm-6">
+										<select id="type1" class="form-control" tabindex="0" data-toggle="popover" data-content="Здесь будет типовой текст подсказки">
+											<option selected>Плитный</option>
+											<option>Ленточный</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="type2" class="col-12 col-sm-6 col-form-label">Марка бетона</label>
+									<div class="col-12 col-sm-6">
+										<select id="type2" class="form-control">
+											<option selected>М200 В15</option>
+											<option>М200 В15</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="type3" class="col-12 col-sm-6 col-form-label">Ширина плиты А</label>
+									<div class="col-12 col-sm-6">
+										<input type="number" class="form-control" id="type3"  tabindex="0" data-toggle="popover" data-content="Здесь будет типовой текст подсказки">
+										<span class="length">м</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="type4" class="col-12 col-sm-6 col-form-label">Длина плиты В</label>
+									<div class="col-12 col-sm-6">
+										<input type="number" class="form-control" id="type4">
+										<span class="length">м</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="type5" class="col-12 col-sm-6 col-form-label">Высота плиты С</label>
+									<div class="col-12 col-sm-6">
+										<input type="number" class="form-control" id="type5">
+										<span class="length">мм</span>
+									</div>
+								</div>
+								<div class="accordion" id="armature">
+									<div class="card p-0 mb-3">
+										<div class="card-header no-border p-1" id="armatureHead">
+											<h4 class="mb-0">
+												<button class="btn btn-link btn-block text-left collapsed" type="button"
+													data-toggle="collapse" data-target="#armatureOne"
+													aria-expanded="true" aria-controls="armatureOne">
+													Расчет арматуры
+												</button>
+											</h4>
+										</div>
+
+										<div id="armatureOne" class="collapse mt-3" aria-labelledby="armatureHead"
+											data-parent="#armature">
+											<div class="card-body">
+												<div class="form-group row">
+													<label for="type6" class="col-12 col-sm-6 col-form-label">Длина стержня
+														арматуры</label>
+													<div class="col-12 col-sm-6">
+														<input type="number" class="form-control" id="type6">
+													</div>
+												</div>
+												<div class="form-group row mb-0">
+													<label for="type7" class="col-12 col-sm-6 col-form-label">Крепление
+														арматуры</label>
+													<div class="col-12 col-sm-6">
+														<select id="type7" class="form-control">
+															<option selected>Сварка</option>
+															<option>Стяжка</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion" id="formwork">
+									<div class="card p-0 mb-3">
+										<div class="card-header no-border p-1" id="formworkHead">
+											<h4 class="mb-0">
+												<button class="btn btn-link btn-block text-left collapsed" type="button"
+													data-toggle="collapse" data-target="#formworkOne"
+													aria-expanded="true" aria-controls="formworkOne">
+													Расчет опалубки
+												</button>
+											</h4>
+										</div>
+
+										<div id="formworkOne" class="collapse mt-3" aria-labelledby="formworkHead"
+											data-parent="#formwork">
+											<div class="card-body">
+												<div class="form-group row">
+													<label for="type8" class="col-12 col-sm-6 col-form-label">Длина стержня
+														арматуры</label>
+													<div class="col-12 col-sm-6">
+														<input type="number" class="form-control" id="type8">
+													</div>
+												</div>
+												<div class="form-group row mb-0">
+													<label for="type9" class="col-12 col-sm-6 col-form-label">Крепление
+														арматуры</label>
+													<div class="col-12 col-sm-6">
+														<select id="type9" class="form-control">
+															<option selected>Сварка</option>
+															<option>Стяжка</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="card-footer pt-3 d-flex align-items-center justify-content-between">
+							<p class="price">Стоимость фундамента: <span class="ml-3">102 654 ₽</span></p>
+							<button class="btn btn-orange">Сохранить</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 pr-0 pb-4">
+					<div class="card p-0 mb-0">
+						<div class="card-header p-30 no-border pb-0 d-flex align-items-center justify-content-center">
+							<h3 class="d-inline">
+								Возводимый объект
+							</h3>
+						</div>
+						<div class="card-body pl-30 pr-30">
+							<picture>
+								<source type="image/webp" srcset="img/estimate/bg1.webp">
+								<source type="image/jpeg" srcset="img/estimate/bg1.jpg">
+								<img src="img/estimate/bg1.png" alt="">
+							</picture>
+						</div>
+						<div class="card-footer card-footer--lightgreen no-border-top pl-30 pr-30 pt-17 pb-17 d-flex align-items-center justify-content-center">
+							<div class="d-flex align-items-center flex-column">
+								<p class="mb-2 fz-22 fw-500 color-black">Стоимость объекта</p>
+								<p class="mb-2 fz-36 fw-500 color-black mt-2">809 154 ₽</p>
+								<button class="btn btn-success w-100" data-toggle="modal" data-target="#exampleModal">Итоговая смета</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 px-0">
+					<div class="card mb-0">
+						<div class="card-header rounded-0 d-flex align-items-center justify-content-between">
+							<div class="d-flex align-items-center">
+								<h3 class="d-inline">
+									Сметы
+								</h3>
+								<span class="badge badge-light badge-pill w-45 px-0 color-text2 ml-3">5</span>
+							</div>
+							<ul class="sort d-flex align-items-center">
+								<li class="sort-item mr-0">
+									<a href="#">
+										<i class="ico-list"></i>
+									</a>
+								</li>
+								<li class="sort-item">
+									<a href="#" class="active">
+										<i class="ico-copy"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="card-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 px-0">
+										<div class="estimate-name card-body d-flex justufy-content-between mb-4">
+											<div class="swiper-container slider-estimate w-100 no-border-left">
+												<div class="border-x" style="position: absolute; bottom: 3px; z-index: 2; width: 100%;"></div>
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="w-100 no-border-left">
+															<button class="btn btn-white d-block mx-auto active">
+																<p class="text-left">Название сметы 1</p>    
+															</button>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="w-100">
+															<button class="btn btn-white d-block mx-auto">
+																<p class="text-left">Название сметы 1</p>    
+															</button>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="w-100">
+															<button class="btn btn-white d-block mx-auto">
+																<p class="text-left">Название сметы 1</p>    
+															</button>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="w-100">
+															<button class="btn btn-white d-block mx-auto">
+																<p class="text-left">Название сметы 1</p>    
+															</button>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="w-100">
+															<button class="btn btn-white d-block mx-auto">
+																<p class="text-left">Название сметы 1</p>    
+															</button>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="w-100">
+															<button class="btn btn-white d-block mx-auto">
+																<p class="text-left">Название сметы 1</p>    
+															</button>
+														</div>
+													</div>
+												</div>
+												<!-- Add Arrows -->
+												<div class="swiper-button-next" style="top: 30px; z-index: 3; opacity: 1;"></div>
+												<div class="swiper-button-prev" style="top: 30px; z-index: 3; opacity: 1;"></div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12 px-0">
+										<table class="table table-noborder-bottom table-padding-1">
+											<thead>
+												<tr class="mb-2">
+													<th colspan="4"><b>Материалы</b></th>
+												</tr>
+												<tr>
+													<th class="w-15p">№</th>
+													<th class="w-55p">Наименование товара</th>
+													<th class="w-15p">Количество</th>
+													<th class="w-15p">Стоимость</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>105465802</td>
+													<td scope="row">
+														<div class="filter-item-check d-flex justify-content-between m-0">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck1-91">
+																<label class="custom-control-label" for="customCheck1-91">Фундамент бетонный ФБС-12-5-6Т</label>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="position-relative">
+															<input type="number" class="form-control" id="type3"  value="20">
+															<span class="length">шт</span>
+														</div>
+													</td>
+													<td>
+														200 000 руб.
+													</td>
+												</tr>
+												<tr>
+													<td>254858780</td>
+													<td scope="row">
+														<div class="filter-item-check d-flex justify-content-between m-0">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck1-92">
+																<label class="custom-control-label" for="customCheck1-92">Бетон M300</label>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="position-relative">
+															<input type="number" class="form-control" id="type3" value="8">
+															<span class="length">м<sup>3</sup></span>
+														</div>
+													</td>
+													<td>
+														120 000 руб.
+													</td>
+												</tr>
+												<tr>
+													<td>025400254</td>
+													<td scope="row">
+														<div class="filter-item-check d-flex justify-content-between m-0">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck1-93">
+																<label class="custom-control-label" for="customCheck1-93">Металлочерепица 0.4 мм 2250х1180 мм коричневый RAL 8017</label>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="position-relative">
+															<input type="number" class="form-control" id="type3" value="40">
+															<span class="length">шт</span>
+														</div>
+													</td>
+													<td>
+														80 000 руб.
+													</td>
+												</tr>
+												<tr>
+													<td colspan="4" class="text-right">
+														<p>Итого:   <b class="ml-2 color-black">400 000 ₽</b></p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<table class="table table-noborder-bottom table-padding-1">
+											<thead>
+												<tr class="mb-2">
+													<th colspan="4"><b>Работа</b></th>
+												</tr>
+												<tr>
+													<th class="w-15p">№</th>
+													<th class="w-55p">Наименование товара</th>
+													<th class="w-15p">Количество</th>
+													<th class="w-15p">Стоимость</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>105465802</td>
+													<td scope="row">
+														<div class="filter-item-check d-flex justify-content-between m-0">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck1-94">
+																<label class="custom-control-label" for="customCheck1-94">Установка фундамента бетонного ФБС-12-5-6Т</label>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="position-relative">
+															<input type="number" class="form-control" id="type3"  value="20">
+															<span class="length">шт</span>
+														</div>
+													</td>
+													<td>
+														200 000 руб.
+													</td>
+												</tr>
+												<tr>
+													<td>254858780</td>
+													<td scope="row">
+														<div class="filter-item-check d-flex justify-content-between m-0">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck1-95">
+																<label class="custom-control-label" for="customCheck1-95">Заливка бетонометон M300</label>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="position-relative">
+															<input type="number" class="form-control" id="type3" value="8">
+															<span class="length">м<sup>3</sup></span>
+														</div>
+													</td>
+													<td>
+														120 000 руб.
+													</td>
+												</tr>
+												<tr>
+													<td>025400254</td>
+													<td scope="row">
+														<div class="filter-item-check d-flex justify-content-between m-0">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck1-96">
+																<label class="custom-control-label" for="customCheck1-96">Укладка металлочерепицы 0.4 мм 2250х1180 мм коричневый</label>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="position-relative">
+															<input type="number" class="form-control" id="type3" value="40">
+															<span class="length">шт</span>
+														</div>
+													</td>
+													<td>
+														80 000 руб.
+													</td>
+												</tr>
+												<tr>
+													<td colspan="4" class="text-right">
+														<p class="mb-3">Итого:   <b class="ml-2 color-black">400 000 ₽</b></p>
+														<p class="mb-3">Всего: 	<b class="ml-2 color-black" style="font-size: 24px;">520 000 ₽</b></p>
+														<div>
+															<div class="d-flex justify-content-end">
+																<button class="btn btn-main px-0 ml-3" style="width: 42px !important;">
+																	<i class="ico-impresora"></i>
+																</button>
+																<button class="btn btn-orange ml-3">В корзину</button>
+															</div>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body py-0">
+					<div class="row">
+						<div class="col-3 d-flex justify-content-center">
+							<div class="round">
+								<i class="own ico-exclamation ico--white"></i>
+							</div>
+						</div>
+						<div class="col-9 d-flex align-items-center">
+							<p>Здесь будет типовой текст предупреждения</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer justify-content-center">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					<button type="button" class="btn btn-success">Я согласен</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- @import kit/footer.kit-->

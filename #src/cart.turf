@@ -1,0 +1,326 @@
+<!-- @import kit/head.kit-->
+<title>Корзина</title>
+<!-- @import kit/header.kit-->
+
+<div class="app">
+    <!-- @import kit/submenu.kit -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 px-0 pb-4">
+                <button class="btn btn-main mr-3 active">Материалы</button>
+                <button class="btn btn-main mr-3">Ремонт и отделка</button>
+                <button class="btn btn-main mr-3">Строительство дома</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-0 pb-4">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Инструменты</a></li>
+                    <li class="breadcrumb-item"><a href="#">Предложения</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12 px-0">
+                <div class="card">
+                    <div class="card-header rounded-0 d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <h3 class="d-inline color-black">Предложения</h3>
+                            <span class="badge badge-orange badge-pill w-45 px-0 color-white ml-3">5</span>
+                        </div>
+                        <ul class="sort d-flex align-items-center">
+                            <li class="sort-item m-0">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="order-type1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        По возрастанию цены
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="order-type1" tabindex="0">
+                                        <a class="dropdown-item" href="#">По рейтингу</a>
+                                        <a class="dropdown-item" href="#">По стоимости</a>
+                                        <a class="dropdown-item" href="#">По популяности</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 px-0">
+                                    <p class="mb-3">Мы подобрали для вас выгодные предложения  разных магазинов и сгруппировали их по общей стоимости, учитывая стоимость доставки. Чтобы оформить заказ на данные товары, вам необходимо оплатить услугу нашего сервиса. Оплатите услугу и кнопка “Купить товары” станет активной.</p>
+                                    <div class="d-flex align-items-center mb-4">
+                                        <div class="progress mr-3" data-percentage="75">
+                                            <span class="progress-left">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <span class="progress-right">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <div class="progress-value">
+                                                <div>
+                                                    75%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="fz-18"><b>Подождите, идет поиск</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 px-0">
+                                    <div class="delivery-type card-body d-flex justufy-content-between mb-4">
+                                        <div class="swiper-container slider-delivery w-100 no-border-left">
+                                            <div class="border-bottom border-x" style="position: absolute; bottom: 3px; z-index: 2; width: 100%;"></div>
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="w-100 no-border-left">
+                                                        <button class="btn btn-white d-block mx-auto pt-0 active">
+                                                            <p class="text-left fz-18 fw-500">9 700 ₽</p>
+                                                            <p class="color-text2 lh-a">Доставка из 2 магазинов</p>    
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="w-100">
+                                                        <button class="btn btn-white d-block mx-auto pt-0">
+                                                            <p class="text-left fz-18 fw-500">9 750 ₽</p>
+                                                            <p class="color-text2 lh-a">Доставка из 2 магазинов</p>    
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="w-100">
+                                                        <button class="btn btn-white d-block mx-auto pt-0">
+                                                            <p class="text-left fz-18 fw-500">10 700 ₽</p>
+                                                            <p class="color-text2 lh-a">Доставка из 3 магазинов</p>    
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="w-100">
+                                                        <button class="btn btn-white d-block mx-auto pt-0">
+                                                            <p class="text-left fz-18 fw-500">9 100 ₽</p>
+                                                            <p class="color-text2 lh-a">Доставка из 5 магазинов</p>    
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Add Arrows -->
+                                            <div class="swiper-button-next" style="top: 38px; z-index: 3; opacity: 1;"></div>
+                                            <div class="swiper-button-prev" style="top: 38px; z-index: 3; opacity: 1;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 px-0">
+                                    <p class="fz-18 mb-3"><b>Товар доступен в двух магазинах</b></p>
+                                    <div class="row">
+                                        <div class="col-3 mb-4">
+                                            <div class="shop">
+                                                <div class="shop-logo mb-3">
+                                                    <img src="img/seller/220.jpg" alt="">
+                                                </div>
+                                                <p class="mb-2">Доставка: 300 руб.</p>
+                                                <p class="mb-2">Скидка по карте: <span class="color-main">5%</span></p>
+                                                <p class="fz-15 mb-2"><a href="#">Посмотреть карту</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 mb-4">
+                                            <div class="shop">
+                                                <div class="shop-logo mb-3">
+                                                    <img src="img/seller/citylink.jpg" alt="">
+                                                </div>
+                                                <p class="mb-2">Доставка: 200 руб.</p>
+                                                <p class="mb-2">Скидка по карте: <span class="color-main">7%</span></p>
+                                                <p class="fz-15 mb-2"><a href="#">Посмотреть карту</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 px-0 mb-4">
+                                    <p class="mb-2">Всего товаров: <span class="color-secondary fw-500">2 шт.</span></p>
+                                    <p class="mb-2">Стоимость товаров: <span class="color-secondary fw-500">9 700 ₽</span></p>
+                                    <p class="mb-2">Стоимость со скидкой: <span class="color-secondary fw-500">9 215 ₽</span></p>
+                                    <p class="mb-2">Стоимость доставки: <span class="color-secondary fw-500">500 ₽</span></p>
+                                    <p class="mb-2">Итого: <span class="color-secondary fw-500">9 715 ₽</span></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 px-0">
+                                    <div class="product product--horizontally pt-4 mb-0 no-border border-top">
+                                        <div class="d-flex justify-content-between w-100">
+                                            <div class="d-flex">
+                                                <div class="product-image">
+                                                    <img src="img/product/p.jpg" alt="product">
+                                                </div>
+                                                <div>
+                                                    <h4>
+                                                        <a href="#">Полировальная машина СПЕЦ БМП-1200</a>
+                                                    </h4>
+                                                    <ul class="product-data d-flex justify-content-between align-items-center">
+                                                        <li class="product-data-item d-flex">
+                                                            <span>
+                                                                <i class="ico-comment"></i> 42
+                                                            </span>
+                                                            <span>
+                                                                <i class="ico-star"></i> 4.8
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                    <div>
+                                                        <span class="product-price">3 490 руб.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-content-between flex-wrap" style="width: 200px;">
+                                                <button class="btn btn-close-x">
+                                                    <span class="mr-2" aria-hidden="true">×</span>
+                                                    Удалить
+                                                </button>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="ico-exclamation wh-20 mr-2"></i>
+                                                    <p class="color-text2">Магазин доступен после оплаты</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product product--horizontally pt-4 mb-0 no-border border-top">
+                                        <div class="d-flex justify-content-between w-100">
+                                            <div class="d-flex">
+                                                <div class="product-image">
+                                                    <img src="img/product/p.jpg" alt="product">
+                                                </div>
+                                                <div>
+                                                    <h4>
+                                                        <a href="#">Полировальная машина СПЕЦ БМП-1200</a>
+                                                    </h4>
+                                                    <ul class="product-data d-flex justify-content-between align-items-center">
+                                                        <li class="product-data-item d-flex">
+                                                            <span>
+                                                                <i class="ico-comment"></i> 42
+                                                            </span>
+                                                            <span>
+                                                                <i class="ico-star"></i> 4.8
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                    <div>
+                                                        <span class="product-price">3 490 руб.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-content-between flex-wrap" style="width: 200px;">
+                                                <button class="btn btn-close-x">
+                                                    <span class="mr-2" aria-hidden="true">×</span>
+                                                    Удалить
+                                                </button>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="ico-exclamation wh-20 mr-2"></i>
+                                                    <p class="color-text2">Магазин доступен после оплаты</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product product--horizontally pt-4 mb-0 no-border border-top">
+                                        <div class="d-flex justify-content-between w-100">
+                                            <div class="d-flex">
+                                                <div class="product-image">
+                                                    <img src="img/product/p.jpg" alt="product">
+                                                </div>
+                                                <div>
+                                                    <h4>
+                                                        <a href="#">Полировальная машина СПЕЦ БМП-1200</a>
+                                                    </h4>
+                                                    <ul class="product-data d-flex justify-content-between align-items-center">
+                                                        <li class="product-data-item d-flex">
+                                                            <span>
+                                                                <i class="ico-comment"></i> 42
+                                                            </span>
+                                                            <span>
+                                                                <i class="ico-star"></i> 4.8
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                    <div>
+                                                        <span class="product-price">3 490 руб.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-content-between flex-wrap" style="width: 200px;">
+                                                <button class="btn btn-close-x">
+                                                    <span class="mr-2" aria-hidden="true">×</span>
+                                                    Удалить
+                                                </button>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="ico-exclamation wh-20 mr-2"></i>
+                                                    <p class="color-text2">Магазин доступен после оплаты</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product product--horizontally pt-4 mb-0 no-border border-top">
+                                        <div class="d-flex justify-content-between w-100">
+                                            <div class="d-flex">
+                                                <div class="product-image">
+                                                    <img src="img/product/p.jpg" alt="product">
+                                                </div>
+                                                <div>
+                                                    <h4>
+                                                        <a href="#">Полировальная машина СПЕЦ БМП-1200</a>
+                                                    </h4>
+                                                    <ul class="product-data d-flex justify-content-between align-items-center">
+                                                        <li class="product-data-item d-flex">
+                                                            <span>
+                                                                <i class="ico-comment"></i> 42
+                                                            </span>
+                                                            <span>
+                                                                <i class="ico-star"></i> 4.8
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                    <div>
+                                                        <span class="product-price">3 490 руб.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-content-between flex-wrap" style="width: 200px;">
+                                                <button class="btn btn-close-x">
+                                                    <span class="mr-2" aria-hidden="true">×</span>
+                                                    Удалить
+                                                </button>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="ico-exclamation wh-20 mr-2"></i>
+                                                    <p class="color-text2">Магазин доступен после оплаты</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex align-items-center justify-content-between pt-4">
+                            <div class="d-flex align-items-center">
+                                <i class="ico-exclamation wh-20 mr-3"></i>
+                                <p class="color-text2">Мы положим автоматически в корзины магазинов выбранные вами товары <br>после оплаты</p>
+                            </div>
+                            <div class="d-flex">
+                                <button class="btn btn-orange">Оплатить уcлугу</button>
+                                <button class="btn btn-light ml-3">Купить товары</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- @import kit/footer.kit-->

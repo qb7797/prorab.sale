@@ -1,0 +1,66 @@
+html, body, p, h1, h2, h3, h4, ul, article, figure
+	padding: 0
+	margin: 0
+	font-weight: normal
+
+body
+	line-height: $lh
+	font-size: $fs
+	width: 100%
+	overflow-x: hidden
+	font-family: 'Rubik', sans-serif
+	font-display: swap
+	color: $grey
+	background-color: $bgcolor
+
+a
+	color: inherit
+
+*,
+*:before,
+*:after
+	box-sizing: border-box
+
+.btn
+	border: none
+
+a,
+.btn,
+button
+	svg
+		transition: all 0.15s ease-in-out
+a,
+.btn,
+button,
+button:before,
+button:after,
+a:before,
+a:after
+	text-decoration: none
+	transition: all 0.15s ease-in-out
+	cursor: pointer
+	outline: none
+
+img
+	max-width: 100%
+
+ul
+	list-style: none
+input
+	font-size: $fs
+	// width: 100%
+	overflow-x: hidden
+	font-family: 'Rubik', sans-serif
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+	-webkit-appearance: none
+	margin: 0
+
+/* Firefox */
+input[type=number]
+	-moz-appearance: textfield
+textarea
+	resize: none
+	width: 100%
+	min-width: 100%

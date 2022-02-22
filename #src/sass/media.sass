@@ -1,0 +1,1099 @@
+a
+    &:hover
+        color: $mainColor
+@for $i from 1 through 100
+    .w-#{$i}p
+        width: percentage($i / 100)
+.show
+    display: block
+.hide
+    display: none
+.fz-14
+    font-size: 14px
+.fz-15
+    font-size: 15px
+.fz-18
+    font-size: 18px !important
+.fz-30
+    font-size: 30px !important
+.fw-500
+    font-weight: 500 !important
+.lh-a
+    line-height: 1rem
+.p-30
+    padding: 30px !important
+.pt-30
+    padding-top: 30px !important
+.pb-30
+    padding-bottom: 30px !important
+.pl-30
+    padding-left: 30px !important
+.pr-30
+    padding-right: 30px !important
+.p-20
+    padding: 20px !important
+.pt-20
+    padding-top: 20px !important
+.pb-20
+    padding-bottom: 20px !important
+.pl-20
+    padding-left: 20px !important
+.pr-20
+    padding-right: 20px !important
+.pb-17
+    padding-bottom: 17px !important
+.pt-17
+    padding-top: 17px !important
+.mr-30
+    margin-right: 30px
+.mx-30
+    margin: 0 30px
+.mt--32
+    margin-top: -32px
+.fz-22
+    font-size: 22px
+.fz-36
+    font-size: 36px
+.w-90px
+    width: 90px !important
+.w-55p
+    width: 55%
+.flex-none
+    flex: none !important
+.rounded-50
+    border-radius: 50%
+.rounded-50-50-0-0
+    border-radius: 50% 50% 0 0 !important
+.bg-orange
+    background-color: $mainColor
+.color-white
+    color: #fff !important
+.color-black
+    color: #000 !important
+.color-text2
+    color: $lightblue !important
+.color-main
+    color: $mainColor !important
+.color-secondary
+    color: $textcolor2 !important
+.border-x
+    &::before
+        content: ''
+        width: 1px 
+        height: 45px
+        background-color: $borderColor
+        position: absolute
+        left: 15px
+        top: -50px
+        display: block
+    &::after
+        content: ''
+        width: 1px 
+        height: 45px
+        background-color: $borderColor
+        position: absolute
+        right: 15px
+        top: -50px
+        display: block
+.border-x-x
+    &::before
+        content: ''
+        width: 1px 
+        height: 45px
+        background-color: $borderColor
+        position: absolute
+        left: 0
+        top: -50px
+        display: block
+    &::after
+        content: ''
+        width: 1px 
+        height: 45px
+        background-color: $borderColor
+        position: absolute
+        right: 0
+        top: -50px
+        display: block
+        
+.wh-32
+    width: 32px
+    height: 32px
+.wh-20
+    mask-size: 20px 20px
+.w-195
+    width: 195px
+.w-45
+    width: 45px !important
+.w-360
+    width: 360px
+.font-medium
+    font-weight: 500
+.showhideall
+    &::after
+        content: 'Свернуть'
+    &.collapsed
+        &::after
+            content: 'Показать все'
+            position: relative
+.form-control
+    border-radius: 10px !important
+    font-family: 'Rubik', sans-serif
+    &:focus
+        border-color: $mainColor
+        box-shadow: none
+.custom
+    &-control
+        min-height: auto
+        &-label
+            font-size: 15px
+            color: $lightblue
+            &::before, &::after
+                top: 0
+        &-input
+            width: 15px
+            height: 15px
+            margin: 0
+    &-checkbox
+        display: flex
+        align-items: center
+.col-form-label
+    padding: 8px 15px
+    color: #4b6584
+h1
+    font-size: 26px
+    font-weight: 600
+.length
+    position: absolute
+    top: 9px
+    right: 25px
+body
+    .overlay
+        background-color: rgba(0,0,0,.5)
+.swiper
+    &-wrapper
+        height: auto 
+    &-slide
+        height: auto 
+    &-container
+        position: relative
+    &-button
+        &-prev, &-next
+            width: 32px
+            height: 32px
+            border: 1px solid $borderColor
+            border-radius: 50%
+            background-color: $bgcolor
+            &::after
+                font-size: 12px
+                color: $grey
+        &-next
+            right: 0
+        &-prev
+            left: 0
+.header
+    &-secondary
+        padding: 15px 0
+        background-color: #37474f
+        a, .dropdown
+            color: $bgcolor
+            &:hover
+                color: $mainColor
+        .dropdown-item
+            color: $grey
+        .choose-theme
+            &-item
+                margin-left: 10px
+                button
+                    border-radius: 5px
+                    display: block
+                    width: 24px
+                    height: 24px
+                    border: 2px solid #37474f
+                    transition: all .3s linear
+                    &.orange-grey
+                        background: transparent
+                        background: linear-gradient(90deg, #fd9644 0%, #fd9644 49%, $lightblue 50%, $lightblue 100%)
+                    &.blue-grey
+                        background: transparent
+                        background: linear-gradient(90deg, #45aaf2 0%, #45aaf2 49%, $lightblue 50%, $lightblue 100%)
+                    &.red-grey
+                        background: transparent
+                        background: linear-gradient(90deg, #b71c1c 0%, #b71c1c 49%, $lightblue 50%, $lightblue 100%)
+                    &.active, &:hover
+                        border: 2px solid $borderColor
+                        transition: all .3s linear
+    &-primary
+        padding: 20px 0
+        background-color: $white
+        .logo
+            margin-right: 50px
+            font-size: 26px
+            font-weight: 600
+            display: flex
+            align-items: center
+            color: #263238
+            span
+                color: $mainColor
+        .form-group
+            width: 360px
+            .form-control
+                // height: 100%
+                border-radius: 10px
+                padding-right: 40px
+                &:focus
+                    border-color: $mainColor
+                    box-shadow: none
+            .inner-input
+                position: absolute
+                top: 50%
+                right: 12px
+                padding: 0
+                margin-top: -8px
+.user-data
+    &-item
+        margin-left: 40px
+        &:first-child
+            margin-left: 0
+        a
+            display: flex
+            align-items: center
+            span
+                font-size: 14px
+                line-height: 17px
+                &.fill-orange
+                    padding: 2px 10px
+                    background-color: $mainColor
+                    border-radius: 10px
+                    color: $white
+.top-navigation
+    ul
+        li
+            margin: 0 27px
+.exit-link
+    a
+        color: $mainColor
+
+.app
+    padding: 30px 0
+    position: relative
+.catalog
+    position: absolute
+    top: 0
+    left: 50%
+    margin-left: -570px
+    z-index: 99
+    &-menu
+        background-color: $white
+        border-radius: 12px
+        padding: 17px 0
+        box-shadow: 0 0 15px rgba(0,0,0,.05)
+        &-item
+            a
+                padding: 10px 37px 10px 23px
+                display: block
+                &:hover,
+                &.active
+                    background-color: $bgcolor
+                    border-left: 4px solid $mainColor
+                i
+                    margin-right: 15px
+                    &::before
+                        color: $lightblue
+    &-submenu
+        margin-bottom: 50px
+        &-item
+            a
+                line-height: 36px
+                &:hover
+                    text-decoration: underline
+            &--title
+                font-size: 18px
+                line-height: 36px
+                font-weight: 600
+    &-list
+        padding: 30px 25px
+        background-color: #fff
+        border-radius: 12px
+        box-shadow: 0 0 15px rgba(0,0,0,.05)
+    &-title
+        font-size: 22px
+        font-weight: 600
+        padding-bottom: 25px
+        margin-bottom: 25px
+        border-bottom: 1px solid $borderColor
+
+.card
+    border-width: 0
+    border-radius: 12px
+    padding: 30px
+    margin-bottom: 30px
+    &--grey
+        background-color: $lightgrey
+        padding: 20px
+    .no-border
+        border-bottom: none
+    .no-border-top
+        border-top: none
+    &-header
+        border-bottom: 1px solid $borderColor
+        border-radius: 12px
+        background-color: #fff
+        padding: 0 0 27px
+        margin-bottom: 30px
+        &--grey
+            background-color: $lightgrey
+        &:first-child
+            border-radius: inherit
+        h3
+            font-size: 22px
+            font-weight: 600
+            color: $grey
+        h4
+            font-size: 18px
+            font-weight: 500
+            color: $grey
+        .sort
+            &-item
+                margin: 0 10px
+                &:last-child
+                    margin-right: 0
+                &:first-child
+                    margin-right: 40px
+                &:hover
+                    color: $mainColor
+                a
+                    &.active, &:hover
+                        i
+                            background-color: $mainColor
+    &-body
+        padding: 0
+    &-footer
+        padding: 0
+        background-color: transparent
+        &:last-child
+            border-radius: 0 0 12px 12px !important
+        .price
+            color: $black
+            span
+                font-size: 24px
+                font-weight: 600
+    &-footer--lightgreen
+        background-color: #effaf5
+
+.product
+    position: relative
+    &--horizontally
+        display: flex
+        align-items: center
+        width: 100%
+        padding-bottom: 25px
+        margin-bottom: 25px
+        border-bottom: 1px solid $borderColor
+        button
+            min-width: 120px
+    &.product--horizontally
+        h4
+            margin-bottom: 20px
+        .product-data
+            justify-content: normal !important
+            &-item
+                a
+                    top: 40px
+                button
+                    top: 51px
+                    position: relative
+        .product-image
+            margin-bottom: 0
+            margin-right: 50px
+            min-width: 113px
+            height: 113px
+            background-color: $white
+            display: flex
+            align-items: center
+    &.product--horizontally + .collapse,
+    &.product--horizontally + .collapsing
+        width: 100%
+    &.square-short
+        padding: 30px
+        border: 1px solid $borderColor
+        border-radius: 12px
+        margin: 0 15px 0
+        h4
+            font-size: 16px
+            color: $grey
+            margin-bottom: 20px
+            a
+                display: block
+                &:hover
+                    color: $mainColor
+    &-image
+        margin-bottom: 20px
+        img
+            display: block
+            margin: 0 auto
+    &-price
+        font-size: 18px
+        font-weight: 500
+        &--old
+            font-size: 16px
+            font-weight: 400
+            color: #92a3b5
+            text-decoration: line-through
+            margin-left: 20px
+    &-data
+        margin-bottom: 20px
+        &-item
+            font-size: 15px
+            color: #92a3b5
+            a
+                position: relative
+                z-index: 99
+                &:hover
+                    color: $mainColor
+            span
+                margin-right: 20px
+                line-height: 20px
+                display: flex
+                i
+                    margin-right: 10px
+    &-sale
+        width: 64px
+        height: 64px
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: $mainColor
+        border-radius: 50%
+
+        font-size: 18px
+        color: $white
+
+        position: absolute
+        top: 20px
+        right: 20px
+    &-count
+        position: relative
+        width: 110px
+        button
+            background-color: transparent
+            border-radius: 0
+            top: 0
+            margin-top: 0
+            height: 100%
+            width: 30px
+            &.minus
+                border-right: 1px solid $borderColor
+                left: 0
+            &.plus
+                border-left: 1px solid $borderColor
+                right: 0
+    &-tabs
+        .nav-link
+            min-height: 43px
+.estimate
+    &-type
+        div
+            border-right: 1px solid $borderColor
+            &:last-child
+                border-right: none
+        button
+            i
+                display: block
+                font-size: 36px
+                margin: 0 auto
+    &-name
+        .swiper-slide
+            .w-100
+                border:
+                    left: 1px solid $borderColor
+        .swiper-slide-active
+            .w-100
+                border: none
+        button
+            padding: 
+                top: 5px
+                bottom: 5px
+        .border-x
+            &::before,
+            &::after
+                height: 48px
+                top: -45px
+.accordion
+    .card
+        border-radius: 5px !important
+        &-header
+            background-color: #f6f7f9
+            button
+                color: $black
+                font-weight: 600
+    .form-inline
+        margin-bottom: 20px
+.modal
+    &-content
+        border: none
+        box-shadow: 0 0 15px rgba(0,0,0,.05)
+    &-header
+        border-bottom: none
+    &-footer
+        border-top: none
+.badge
+    font-size: 14px
+    font-weight: 400
+    padding: 4px 14px
+    &-orange
+        background-color: $mainColor
+.search-field
+    .form-group
+    .inner-input
+        position: absolute
+        top: 50%
+        right: 12px
+        padding: 0
+        margin-top: -8px
+.round
+    height: 64px
+    width: 64px
+    background-color: $mainColor
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+.popover
+    border: none
+    box-shadow: 0 0 15px rgba(#000, .1)
+    border-radius: 12px
+    &-body
+        color: $lightblue
+        font-family: 'Rubik', sans-serif
+        font-size: 15px
+        line-height: 1.6
+        padding: 20px
+.filter
+    &--scroll
+        ::-webkit-scrollbar
+            width: 10px
+        ::-webkit-scrollbar-track
+            background-color: #323e61
+            border-radius: 10px
+        ::-webkit-scrollbar-thumb
+            background: #00c2ff
+            border-radius: 10px
+            margin: 0 auto
+            width: 5px
+    &-item
+        &-check
+            margin-bottom: 10px
+            a
+                &.collapsed
+                    &::after
+                        content: '+'
+                        position: relative
+                        right: 20px
+                        width: 10px
+                        text-align: center
+                        display: block
+                &::after
+                    content: '-'
+                    position: relative
+                    right: 20px
+                    width: 10px
+                    text-align: center
+                    display: block
+    &-sub
+        margin-left: 30px
+        &-item
+            margin-bottom: 10px
+    .custom
+        &-control
+            min-height: auto
+            &-label
+                font-size: 15px
+                color: $lightblue
+                &::before, &::after
+                    top: 0
+            &-input
+                width: 15px
+                height: 15px
+                margin: 0
+        &-checkbox
+            display: flex
+            align-items: center
+.goods
+    &-heading
+        color: $textcolor2
+        font-weight: 500
+        margin-bottom: 20px
+    &-items
+        margin-left: 0
+        margin-bottom: 10px
+    &-image
+        width: 64px
+        height: 64px
+        background-color: #fff
+        margin-left: 15px
+        margin-right: 20px
+        img
+            width: 100%
+            padding: 8px
+    &-title
+        a
+            &::after
+                content: ''
+    &-filter
+        .custom
+            &-control
+                min-height: auto
+                &-label
+                    font-size: 15px
+                    color: $lightblue
+                    &::before, &::after
+                        top: 0
+                &-input
+                    width: 15px
+                    height: 15px
+                    margin: 0
+            &-checkbox
+                display: flex
+                align-items: center
+.alert
+    padding: 25px 30px
+    border-radius: 12px
+    border: none
+    &-success
+        background-color: #effaf5
+    .text-success
+        color: $success
+    p
+        color: $lightblue
+        span
+            color: $grey
+.option
+    padding-top: 20px
+    margin-bottom: 20px
+    border-top: 1px solid $borderColor
+    &:last-child
+        margin-bottom: 0
+    &-title
+        margin-bottom: 20px
+        p
+            font-weight: 500
+    &-body
+        .input-group
+            display: flex
+            align-items: center
+            input
+                text-align: center
+        .custom
+            &-control
+                margin-bottom: 15px
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label
+    color: $grey
+.custom-control-input:checked~.custom-control-label:before
+    border-color: $mainColor
+    background-color: $mainColor
+.custom-control-input:focus:not(:checked)~.custom-control-label:before
+    border-color: $mainColor
+.custom-control-input:focus~.custom-control-label:before
+    box-shadow: none
+.bs-popover-auto[x-placement^=top]>.arrow, .bs-popover-top>.arrow
+    bottom: -8px
+.bs-popover-auto[x-placement^=top]>.arrow:before, .bs-popover-top>.arrow:before
+    border: none
+
+.btn.btn-link.btn-block.text-left
+    &::after
+        content: '>'
+        font-weight: 400
+        position: absolute
+        right: 15px
+        transform: rotate(-90deg)
+.btn.btn-link.btn-block.text-left.collapsed
+    &::after
+        content: '<'
+        transform: rotate(-90deg)
+
+.arrowupdown
+    &::after
+        content: '>'
+        font-weight: 400
+        position: absolute
+        right: 15px
+        transform: rotate(-90deg)
+    &.collapsed
+        &::after
+            content: '<'
+            transform: rotate(-90deg)
+    &.right--20
+        &::after
+            right: -20px
+footer
+    padding: 25px 0
+    background-color: #37474f
+    p
+        color: $bgcolor
+.autocomplete
+    position: relative
+    display: inline-block
+    &-items
+        box-shadow: 0 0 15px rgba(0,0,0,.05)
+        position: absolute
+        top: 100%
+        left: 0
+        right: 0
+        z-index: 999
+        div
+            padding: 4px 10px
+            cursor: pointer
+            background-color: $white
+            &:hover
+                background-color: #e9e9e9
+    &-active
+        background-color: $lightblue !important
+        color: #ffffff
+.nav
+    &-item
+        &.show
+            border-top-color:  #fff
+            border-right-color:  #fff
+            border-left-color:  #fff
+    &-link
+        color: $lightblue
+        margin-right: 40px
+        .badge
+            color: $lightblue
+        &.active, &:hover, &:focus
+            color: $grey
+            font-weight: 500
+            border-color: $mainColor !important
+            border-bottom-width: 4px 
+            border-top-color:  #fff !important
+            border-right-color:  #fff !important
+            border-left-color:  #fff !important
+            .badge
+                color: $grey
+.slider
+    &-rooms
+        position: initial
+        .swiper-button-next, .swiper-button-prev
+            margin-top: -16px
+        .swiper-button-next
+            right: 130px
+        .swiper-button-prev
+            left: 130px
+        .swiper-button-disabled
+            opacity: 1
+            &::after
+                color: #fff
+.user
+    &-avatar
+        width: 119px
+        height: 119px
+        border-radius: 50%
+        overflow: hidden
+        margin: 0 auto        
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 30px
+    &-name
+        margin-bottom: 30px
+    &-data
+        span
+            display: flex
+            align-items: center
+            margin: 0 8px
+            a
+                margin-left: 10px
+    &-menu
+        padding: 0
+        &-item
+            a
+                padding: 12px 37px 12px 23px
+                display: flex
+                align-items: center
+                justify-content: space-between
+                &:hover,
+                &.active
+                    background-color: $bgcolor
+                    border-left: 4px solid $mainColor
+                i
+                    &::before
+                        color: $lightblue
+.review
+    &-title
+        color: $textcolor2
+        font-size: 18px
+        font-weight: 500
+    &-date
+        font-size: 15px
+        color: $lightblue
+    &-body
+        p
+            line-height: 24px
+
+.switch
+    position: relative
+    display: inline-block
+    width: 45px
+    height: 20px
+    input
+        opacity: 0
+        width: 0
+        height: 0
+    input:checked + .slider
+        background-color: $mainColor
+    input:checked + .slider:before
+        transform: translateX(23px)
+    .slider
+        position: absolute
+        cursor: pointer
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: $bgcolor
+        transition: .4s
+        &::before
+            position: absolute
+            content: ""
+            height: 16px
+            width: 16px
+            left: 3px
+            bottom: 2px
+            background-color: white
+            -webkit-transition: .4s
+            transition: .4s
+        &.rounde
+            border-radius: 34px
+            &::before
+                border-radius: 50%
+.repair, .constraction
+    color: $lightblue
+    font-size: 18px
+    &.font-medium
+        color: $grey
+.minus, .plus
+    position: absolute
+    width: 26px
+    height: 26px
+    background-color: $bgcolor
+    border-radius: 4px
+    color: $lightblue
+    top: 50%
+    margin-top: -13px
+    line-height: 15px
+    padding: 0
+.minus
+    left: 7px
+.plus
+    right: 7px
+.table 
+    border-spacing: 0
+    thead
+        th
+            text-align: left
+            white-space: nowrap
+            padding: 12px 0
+            border-bottom: 1px solid $borderColor
+    tbody
+        td
+            padding: 17px 0
+            border-bottom: 1px solid $borderColor
+    &-padding-1
+        th
+            padding:
+                top: 27px !important
+                bottom: 27px !important
+        td, th 
+            padding:
+                left: 1rem !important
+                right: 1rem !important
+    &-noborder-bottom
+        tr
+            &:last-child
+                td
+                    border-bottom: none
+    &-border-top
+        tr
+            &:first-child
+                th
+                    border:
+                        top: 1px solid $borderColor      
+    &-characteristics
+        border-collapse: separate
+        border-spacing: 0 10px
+        td
+            &.type
+                position: relative
+                width: 435px
+                color: $lightblue
+                &::before
+                    content: ''
+                    display: block
+                    border-bottom: 1px dashed $borderColor
+                    bottom: 4px
+                    left: 0
+                    width: 100%
+                    position: absolute
+            span
+                position: relative
+                background-color: #fff
+                padding-right: 10px
+            &.data
+                text-indent: 15px
+.signin
+    &-item
+        margin: 0 10px
+        a
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 32px 
+            height: 32px
+#chartjs-tooltip
+    background-color: $bgcolor
+    font-size: 14px
+    font-weight: 700
+    border-radius: 7px
+.breadcrumb
+    display: flex
+    position: relative
+    &-item
+        a
+            color: $grey
+            &:hover
+                color: $mainColor
+            &::after
+                content: '-'
+                position: relative
+                right: 0
+                margin: 0 7px
+        &:last-child
+            a
+                color: $black
+                &::after
+                    content: ''
+.stock
+    font-weight: 500
+    &--in
+        color: $success
+    &--out
+        color: #f43
+.color
+    display: flex
+    &-item
+        width: 24px
+        height: 24px
+        border-radius: 50%
+        margin-right: 10px
+        &:hover
+            cursor: pointer
+        &--orange
+            background-color: #fd9644
+        &--yellow
+            background-color: #fed330
+        &--grey
+            background-color: #666666
+        &.selected
+            background-image: url('../img/icon/check.png')
+            background-position: 50% 50%
+            background-repeat: no-repeat
+.gallery-thumbs 
+    width: calc(20% - 21px)
+    height: 380px
+    margin-right: 21px
+    // padding: 30px 0
+    .swiper-slide 
+        display: flex
+        align-items: center
+        justify-content: center
+        box-sizing: border-box
+        cursor: pointer
+        border: 2px solid $borderColor
+        max-height: 98px
+        &-active 
+            border: 2px solid $mainColor
+        &:hover 
+            border: 2px solid $mainColor
+        img
+            width: 98px
+    .swiper-button
+        &-next, &-prev
+            border: none
+            background-color: transparent
+            left: 50%
+            margin-left: -16px
+            transform: rotate(90deg)
+            &::after
+                font-size: 26px
+        &-next
+            top: 375px
+        &-prev
+            top: 15px
+.gallery-top 
+    width: 80%
+    height: 380px
+    .swiper-slide 
+        display: flex
+        align-items: center
+        justify-content: center
+        box-sizing: border-box
+
+.stars
+    float: left
+input.star 
+    display: none
+label.star 
+    float: right
+    padding: 0 5px
+    transition: all .2s
+input.star:checked~label.star:before 
+    content: ''
+    background-color: $mainColor
+    transition: all .25s
+input.star-5:checked~label.star:before 
+    background-color: $mainColor
+    text-shadow: 0 0 20px #952
+input.star-1:checked~label.star:before 
+    background-color: #F62
+label.star:hover 
+    transform: rotate(-15deg) scale(1.3)
+label.star:before 
+    content: ''
+    background-color: #92a3b5
+    mask: url('../img/star.svg') 0 50% no-repeat
+    width: 20px
+    height: 20px
+    display: inline-block
+
+.shop
+    border: 1px solid $borderColor
+    border-radius: 7px
+    padding: 20px
+    &-logo
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 50px
+        max-height: 50px
+
+.delivery-type
+    .w-100
+        border-left: 1px solid $borderColor
+        &.no-border-left
+            border-left: none
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px)
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px)
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px)
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px)
+
+// iPhones (phones, 320px and up)
+@media (min-width: 320px)

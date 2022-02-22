@@ -1,0 +1,108 @@
+button
+    &.close
+        width: 40px
+        height: 40px
+        background-color: $lightgrey
+        border-radius: 4px
+        opacity: 1
+        &-modal
+            width: auto
+            height: auto
+            background-color: transparent
+            span
+                color: $grey !important
+        span
+            color: $mainColor
+            font-weight: 400
+.btn
+    font-size: $fs
+    font-family: 'Rubik', sans-serif
+    padding: 0.615rem 1.41rem
+    &:focus
+        box-shadow: none
+        // border-color: transparent
+    &-transparent
+        background-color: transparent
+        color: $lightblue
+        border: 1px solid $lightblue
+        font-weight: 500
+        padding: 8px 15px
+        .burger
+            background-color: $lightblue
+    &-orange
+        background-color: $mainColor
+        border: 1px solid $mainColor
+        color: $white
+        font-weight: 500
+        padding: 8px 15px
+        .burger
+            background-color: $white
+        &:hover
+            color: $grey
+            .burger
+                background-color: $grey
+                transition: all 0.15s ease-in-out
+    &-white
+        background-color: #fff
+        border-bottom: 4px solid #fff
+        color: $lightblue
+        padding: 20px 0 10px
+        line-height: 34px
+        &:hover, &.active
+            font-weight: 500
+            color: $black
+            border-bottom: 4px solid $mainColor
+            i.own
+                background-color: $black
+        span
+            font-size: 21px 
+            font-weight: 500
+    &-main
+        background-color: $bgMainBtn
+        border: 1px solid $bgMainBtn
+        color: $white
+        font-weight: 500
+        padding: 8px 18px
+        &:hover, &.active
+            background-color: $mainColor
+            border: 1px solid $mainColor
+            color: $white
+    &-success
+        background-color: $success
+    &-oneletter
+        width: 24px
+        height: 24px
+        border: none
+        font-size: 14px
+        margin: 0 2px
+        &:hover
+            border: none
+            text-decoration: none
+            color: $white
+            background-color: $mainColor
+        &.active
+            border: none
+            background-color: $mainColor
+            color: #fff
+    &-grey
+        color: $lightblue
+        font-size: 15px
+        &:hover
+            color: $mainColor
+            text-decoration: none
+    &-light
+        color: #4b6584
+    &-close-x
+        color: $mainColor
+        display: flex
+        align-items: center
+        padding: 0
+        span
+            color: #fff
+            width: 20px
+            height: 20px
+            background-color: $mainColor
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center

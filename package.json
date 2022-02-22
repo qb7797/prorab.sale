@@ -1,0 +1,12 @@
+{
+  "name": "Prorab.sale",
+  "version": "1.0.0",
+  "description": "Frontend",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap.native": "^3.0.14-f",
+    "chart.js": "^2.9.4",
+    "chartjs-plugin-datalabels": "^0.7.0",
+    "swiper": "^6.4.11"
+  }
+}
